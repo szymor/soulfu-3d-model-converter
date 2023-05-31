@@ -1,0 +1,64 @@
+Each model file can have several base models
+  Use base models when actual shape of object is changing
+  Use bone animation when object is bending
+
+Segmented models must use bone structure of base model...
+  Fingers in hands should be controlled by main model, not hand model...
+
+All integers are big endian.
+
+Each vertex XYZ during decoding is multiplied by a scale. The scale equals _Scaling_ / 20000.0f.
+Each texture vertex UV during decoding is divided by 256.0f. V is negated (vertical flip).
+
+External bone frame flag is 16384.
+
+DDD Format
+  Header
+    Scaling (unsigned short)
+    Flags (unsigned short, Silhouette, External bone frames, Attachments (x14))
+    Padding zero (unsigned char)
+    Number of Base Models (unsigned char)
+    Number of Bone Frames (unsigned short)
+    For each shadow texture (4 of 'em)
+      Shadow texture index (unsigned char)
+    Name of bone frame file (8 chars, only if external bone frames flag is set) (files must be cross checked to make sure number of bones and other things match) (will need to do tricky stuff if DDD is replaced in file transfer...) (Smart enough to not export in DEVTOOL mode)
+  Base Models
+    Number of vertices (unsigned short)
+    Number of texture vertices (unsigned short)
+    Number of Joints (unsigned short)
+    Number of Bones (unsigned short)
+    For each vertex
+      Vertex Coordinates (3 signed shorts)
+      Vertex Bone Bindings (2 unsigned chars)
+      Vertex Bone Weighting (1 unsigned char, how far along bones, topmost bit is anchor flag)
+    For each texture vertex
+      Texture Vertex Coordinates (2 signed shorts)
+    For each texture (4 of 'em)
+      Rendering mode (unsigned char...  Off==00, On==other)
+      if rendering mode != off
+        Flags(unsigned char...  Solid/Light==0 or 1, Color/White==0 or 2, Cull/DrawBackfaces==0 or 4, Simple/Enviro==0 or 8, None/Positional==0 or 16, Normal/Forced Lines==0 or 32)
+        Alpha (unsigned char)
+        Number of 3 point triangles (unsigned short)
+        For each triangle
+          For each of 3...
+            Vertex (unsigned short)
+            Texture vertex (unsigned short)
+    For each joint
+      Size of joint for collisions (unsigned char)
+    For each bone
+      Bone ID (unsigned char)
+      Bone Joints (2 unsigned shorts)
+  Bone Frames (only if external bone frames are NOT used)
+    Action Name (unsigned char)
+    Action modifier flags (unsigned char...  footsound, get, drop, defend)
+    Base Model (unsigned char)
+    XY movement offset (2 signed shorts)
+    For each bone in base model
+      Bone forward normal (3 signed shorts)
+    For each joint in base model
+      Joint coordinates (3 signed shorts)
+    For each shadow texture (4 of 'em)
+      alpha (unsigned char)
+	  if alpha > 0
+        For each vertex (4 of 'em)
+          Coordinates (2 unsigned shorts)
