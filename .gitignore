@@ -1,3 +1,10 @@
 s3mc
+s3mc.exe
 *.OBJ
+*.obj
 *.DDD
+*.JPG
+*.jpg
+*.PNG
+*.png
+*.PCX
