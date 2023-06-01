@@ -9,6 +9,7 @@ All integers are big endian.
 
 Each vertex XYZ during decoding is multiplied by a scale. The scale equals _Scaling_ / 20000.0f.
 Each texture vertex UV during decoding is divided by 256.0f. V is negated (vertical flip).
+Joint sizes in a base model during decoding are multiplied by 0.015f.
 
 External bone frame flag is 16384.
 

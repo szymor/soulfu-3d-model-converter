@@ -1,12 +1,74 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX_DDD_TEXTURE				(4)
 #define MAX_DDD_SHADOW_TEXTURE		(4)
 #define DDD_SCALE_WEIGHT			(20000.0f)
 #define DDD_EXTERNAL_BONE_FRAMES	(16384)
+#define JOINT_COLLISION_SCALE		(0.015f)
+
+#define RENDER_LIGHT_FLAG			(1)
+#define RENDER_COLOR_FLAG			(2)
+#define RENDER_NOCULL_FLAG			(4)
+#define RENDER_ENVIRO_FLAG			(8)
+#define RENDER_CARTOON_FLAG			(16)
+#define RENDER_EYE_FLAG				(32)
+#define RENDER_NO_LINE_FLAG			(64)
+#define RENDER_PAPER_FLAG			(128)
 
 #define BE_SHORT(b1, b2)	(((unsigned short)(b1) << 8) | (b2))
+
+const char *action_strings[] = {
+	"boning",
+	"stand",
+	"walk",
+	"stun_begin",
+	"stun",
+	"stun_end",
+	"knock_out_begin",
+	"knock_out",
+	"knock_out_stun",
+	"knock_out_end",
+	"bash_left",
+	"bash_right",
+	"thrust_left",
+	"thrust_right",
+	"slash_left",
+	"slash_right",
+	"attack_fail",
+	"block_begin",
+	"block",
+	"block_end",
+	"jump_begin",
+	"jump",
+	"jump_end",
+	"ride",
+	"swim",
+	"swim_forward",
+	"magic",
+	"fire_begin",
+	"fire_ready",
+	"fire",
+	"fire_end",
+	"extra",
+	"special_0",
+	"special_1",
+	"special_2",
+	"special_3",
+	"special_4",
+	"special_5",
+	"special_6",
+	"special_7",
+	"special_8",
+	"special_9",
+	"special_10",
+	"special_11",
+	"special_12",
+	"double_begin",
+	"double",
+	"double_end"
+};
 
 // buffer for DDD file
 unsigned char *ddd = NULL;
@@ -34,7 +96,12 @@ unsigned char *get_next_base_model(unsigned char *curr_base_model);
 unsigned char *get_first_texture(unsigned char *base_model);
 unsigned char *get_next_texture(unsigned char *curr_texture);
 
+unsigned char *get_joint_data(unsigned char *base_model);
+unsigned char *get_bone_data(unsigned char *base_model);
+
 unsigned char get_rendering_mode(unsigned char *texture);
+unsigned char get_texture_flags(unsigned char *texture);
+unsigned char get_texture_alpha(unsigned char *texture);
 unsigned short get_triangle_num(unsigned char *texture);
 unsigned char *get_triangles(unsigned char *texture);
 
@@ -51,6 +118,8 @@ unsigned char *get_shadow_texture_data(unsigned char *ddd, unsigned char *bone_f
 unsigned char get_shadow_texture_alpha(unsigned char *shadow_texture_data_entry);
 
 unsigned char *get_base_model_from_id(unsigned char *ddd, unsigned char id);
+
+char *get_texture_flag_string(unsigned char flags);
 
 int main(int argc, char *argv[])
 {
@@ -70,7 +139,8 @@ int main(int argc, char *argv[])
 
 	float scale = get_scaling(ddd) / DDD_SCALE_WEIGHT;
 	printf("Scaling: %.6f\n", scale);
-	printf("Header flags: %04x\n", get_header_flags(ddd));
+	int header_flags = get_header_flags(ddd);
+	printf("Header flags: %04x\n", header_flags);
 	int base_model_num = get_base_model_num(ddd);
 	printf("Number of base models: %d\n", base_model_num);
 	int bone_frame_num = get_bone_frame_num(ddd);
@@ -96,7 +166,8 @@ int main(int argc, char *argv[])
 		for (int i = 0; i < bone_frame_num; ++i)
 		{
 			printf("Bone frame %d\n", i);
-			printf("  Action name: %02x\n", get_action_name(bone_frame));
+			unsigned char action_id = get_action_name(bone_frame);
+			printf("  Action name: %s (%02x)\n", action_strings[action_id], action_id);
 			printf("  Action modifier flags: %02x\n", get_action_modifier_flags(bone_frame));
 			printf("  Base model id: %d\n", get_base_model_id(bone_frame));
 			bone_frame = get_next_bone_frame(ddd, bone_frame);
@@ -112,6 +183,14 @@ int main(int argc, char *argv[])
 		FILE *out = fopen(filename, "w");
 
 		fprintf(out, "# OBJ file generated from SoulFu DDD file %s\n", argv[1]);
+		fprintf(out, "# Scaling: %.6f\n", scale);
+		fprintf(out, "# Flags: %04x\n", header_flags);
+		if (bff)
+			fprintf(out, "# Bone frame filename: %c%c%c%c%c%c%c%c\n",
+				bff[0], bff[1], bff[2], bff[3], bff[4], bff[5], bff[6], bff[7]);
+
+		fprintf(out, "# Number of vertices: %d\n", get_vertex_num(base_model));
+
 		fprintf(out, "mtllib materials.mtl\n");
 
 		// vertices
@@ -123,13 +202,26 @@ int main(int argc, char *argv[])
 			float y = (signed short)BE_SHORT(vtable[2], vtable[3]) * scale;
 			float z = (signed short)BE_SHORT(vtable[4], vtable[5]) * scale;
 			fprintf(out, "v %.6f %.6f %.6f\n", x, y, z);
+
+			// bone bindings
+			fprintf(out, "# bone binding %d %d\n", vtable[6], vtable[7]);
+
+			// bone weighting
+			unsigned char anchor = vtable[8] & 0x80;
+			unsigned char weight = vtable[8];
+			// get rid of anchor flag, just like in render_bone_frame in render.c
+			// done regardless anchor flag state
+			weight <<= 1;
+			fprintf(out, "# bone weighting %.6f, anchor flag %s\n", weight / 255.0f, anchor ? "set" : "reset");
+
 			vtable += 9;
 		}
 
 		// texture vertices
-		int texture_vertices = get_texture_vertex_num(base_model);
+		int texture_vertex_num = get_texture_vertex_num(base_model);
+		fprintf(out, "# Number of texture vertices: %d\n", texture_vertex_num);
 		unsigned char *tvtable = get_texture_vertices(base_model);
-		for (int j = 0; j < texture_vertices; ++j)
+		for (int j = 0; j < texture_vertex_num; ++j)
 		{
 			float u = (signed short)BE_SHORT(tvtable[0], tvtable[1]) / 256.0f;
 			// note the minus
@@ -145,7 +237,14 @@ int main(int argc, char *argv[])
 			int triangles = get_triangle_num(texture);
 			unsigned char *ttable = get_triangles(texture);
 			if (triangles > 0)
+			{
+				fprintf(out, "# Texture %d\n", j);
+				fprintf(out, "# Rendering mode: %02x\n", get_rendering_mode(texture));
+				fprintf(out, "# Flags: %s\n", get_texture_flag_string(get_texture_flags(texture)));
+				fprintf(out, "# Alpha: %d\n", get_texture_alpha(texture));
+				fprintf(out, "# Number of triangles: %d\n", triangles);
 				fprintf(out, "usemtl material%d\n", j);
+			}
 			for (int k = 0; k < triangles; ++k)
 			{
 				fprintf(out, "f %d/%d %d/%d %d/%d\n", BE_SHORT(ttable[0], ttable[1]) + 1, BE_SHORT(ttable[2], ttable[3]) + 1,
@@ -155,6 +254,29 @@ int main(int argc, char *argv[])
 			}
 
 			texture = get_next_texture(texture);
+		}
+
+		// joints
+		int joint_num = get_joint_num(base_model);
+		fprintf(out, "# Number of joints: %d\n", joint_num);
+		unsigned char *joints = texture;
+		for (int j = 0; j < joint_num; ++j)
+		{
+			fprintf(out, "# Joint id %d, size %.6f\n", j, joints[j] * JOINT_COLLISION_SCALE);
+		}
+
+		// bones
+		int bone_num = get_bone_num(base_model);
+		fprintf(out, "# Number of bones: %d\n", bone_num);
+		unsigned char *bones = get_bone_data(base_model);
+		for (int j = 0; j < bone_num; ++j)
+		{
+			unsigned char bone_id = bones[0];
+			unsigned short bjoints[2];
+			bjoints[0] = BE_SHORT(bones[1], bones[2]);
+			bjoints[1] = BE_SHORT(bones[3], bones[4]);
+			fprintf(out, "# Bone id %d, joints %d %d\n", bone_id, bjoints[0], bjoints[1]);
+			bones += 5;
 		}
 
 		fclose(out);
@@ -295,9 +417,35 @@ unsigned char *get_next_texture(unsigned char *curr_texture)
 	}
 }
 
+unsigned char *get_joint_data(unsigned char *base_model)
+{
+	unsigned char *ptr = get_first_texture(base_model);
+	for (int i = 0; i < MAX_DDD_TEXTURE; ++i)
+		ptr = get_next_texture(ptr);
+	return ptr;
+}
+
+unsigned char *get_bone_data(unsigned char *base_model)
+{
+	int joints = get_joint_num(base_model);
+	return get_joint_data(base_model) + joints;
+}
+
 unsigned char get_rendering_mode(unsigned char *texture)
 {
 	return texture[0];
+}
+
+unsigned char get_texture_flags(unsigned char *texture)
+{
+	// valid only if rendering mode != 0
+	return texture[1];
+}
+
+unsigned char get_texture_alpha(unsigned char *texture)
+{
+	// valid only if rendering mode != 0
+	return texture[2];
 }
 
 unsigned short get_triangle_num(unsigned char *texture)
@@ -376,4 +524,30 @@ unsigned char *get_base_model_from_id(unsigned char *ddd, unsigned char id)
 	unsigned char *ptr = get_first_base_model(ddd);
 	while (id--) ptr = get_next_base_model(ptr);
 	return ptr;
+}
+
+char *get_texture_flag_string(unsigned char flags)
+{
+	static char buff[256];
+	buff[0] = 0;
+	if (flags & RENDER_LIGHT_FLAG)
+		strcat(buff, "light ");
+	if (flags & RENDER_COLOR_FLAG)
+		strcat(buff, "color ");
+	if (flags & RENDER_NOCULL_FLAG)
+		strcat(buff, "nocull ");
+	if (flags & RENDER_ENVIRO_FLAG)
+		strcat(buff, "enviro ");
+	if (flags & RENDER_CARTOON_FLAG)
+		strcat(buff, "cartoon ");
+	if (flags & RENDER_EYE_FLAG)
+		strcat(buff, "eye ");
+	if (flags & RENDER_NO_LINE_FLAG)
+		strcat(buff, "noline ");
+	if (flags & RENDER_PAPER_FLAG)
+		strcat(buff, "paper ");
+	// remove trailing space
+	if (buff[0] != 0)
+		buff[strlen(buff) - 1] = 0;
+	return buff;
 }
