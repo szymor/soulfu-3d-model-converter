@@ -1,0 +1,3288 @@
+# OBJ file generated from SoulFu DDD file ../soulfu/datadir/SLIME.DDD
+#  Scaling: 0.000300
+#  Flags: bfff
+#  Number of vertices: 94
+mtllib materials.mtl
+v -0.013500 -0.943500 1.846500
+# bone binding 1 2
+# bone weighting 0.933333, anchor 0
+v 1.017000 0.021000 1.825500
+# bone binding 1 2
+# bone weighting 0.917647, anchor 0
+v 0.577500 -0.787500 1.842900
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v 0.903300 -0.435300 1.834200
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -1.045200 0.021000 1.825500
+# bone binding 1 2
+# bone weighting 0.917647, anchor 0
+v -0.603900 -0.787500 1.842900
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -0.931500 -0.435300 1.834200
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -0.013500 0.987000 1.846500
+# bone binding 1 2
+# bone weighting 0.933333, anchor 0
+v 0.577500 0.831000 1.842900
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v 0.903300 0.478500 1.834200
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -0.603900 0.831000 1.842900
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -0.931500 0.478500 1.834200
+# bone binding 1 2
+# bone weighting 0.925490, anchor 0
+v -0.005700 -1.245000 1.152000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v 1.293000 0.018600 1.147500
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v 0.738900 -1.041000 1.151400
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v 1.149300 -0.580200 1.149000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -1.306800 0.018600 1.147500
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -0.752700 -1.041000 1.151400
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -1.162500 -0.580200 1.149000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -0.007800 -1.262100 0.497100
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 1.289700 0.018600 0.506400
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 0.736200 -1.056000 0.498300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 1.146900 -0.590100 0.502800
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -1.306200 0.018600 0.506400
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.753000 -1.056000 0.498300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -1.162500 -0.590100 0.502800
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.005700 1.284000 1.152000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v 0.738900 1.080000 1.151400
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v 1.149300 0.619500 1.149000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -0.752700 1.080000 1.151400
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -1.162500 0.619500 1.149000
+# bone binding 2 1
+# bone weighting 0.564706, anchor 0
+v -0.007800 1.300800 0.497100
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 0.736200 1.095000 0.498300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 1.146900 0.628800 0.502800
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.753000 1.095000 0.498300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -1.162500 0.628800 0.502800
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.005700 0.018600 0.162600
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.005700 -0.678000 0.255300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 0.730500 -0.348000 0.260700
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.744000 -0.348000 0.260700
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.005700 0.717000 0.255300
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v 0.730500 0.387000 0.260700
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.744000 0.387000 0.260700
+# bone binding 2 2
+# bone weighting 0.494118, anchor 0
+v -0.015000 -0.574800 2.337900
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v 0.629700 0.038700 2.316900
+# bone binding 1 0
+# bone weighting 0.784314, anchor 0
+v 0.353100 -0.475800 2.334600
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v 0.558000 -0.250800 2.326200
+# bone binding 1 0
+# bone weighting 0.776471, anchor 0
+v -0.660300 0.038700 2.316900
+# bone binding 1 0
+# bone weighting 0.784314, anchor 0
+v -0.384300 -0.475800 2.334600
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v -0.588900 -0.250800 2.326200
+# bone binding 1 0
+# bone weighting 0.776471, anchor 0
+v -0.015000 0.655200 2.337900
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v 0.353100 0.555600 2.334600
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v 0.558000 0.331200 2.326200
+# bone binding 1 0
+# bone weighting 0.776471, anchor 0
+v -0.384300 0.555600 2.334600
+# bone binding 1 0
+# bone weighting 0.768627, anchor 0
+v -0.588900 0.331200 2.326200
+# bone binding 1 0
+# bone weighting 0.776471, anchor 0
+v -0.017100 -0.353700 3.688800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.398400 0.023700 3.672900
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.219600 -0.292500 3.686700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.353100 -0.153600 3.681300
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.432900 0.023700 3.672900
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.255600 -0.292500 3.686700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.387300 -0.153600 3.681300
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.017100 0.403800 3.688800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.219600 0.342300 3.686700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.353100 0.204000 3.681300
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.255600 0.342300 3.686700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.387300 0.204000 3.681300
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.025200 0.054000 4.089000
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.018600 -0.225600 3.957600
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.260400 0.024600 3.943200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.139500 -0.184800 3.955800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.230100 -0.093000 3.950700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.301800 0.024600 3.943200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.180300 -0.184800 3.955800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.269700 -0.093000 3.950700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.018600 0.276000 3.957600
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.139500 0.235800 3.955800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.230100 0.143700 3.950700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.180300 0.235800 3.955800
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.269700 0.143700 3.950700
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.141000 0.515100 3.655200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.506700 0.143700 3.655200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v 0.659700 0.413100 2.992800
+# bone binding 0 1
+# bone weighting 0.658824, anchor 0
+v 0.010500 0.781800 2.992800
+# bone binding 0 1
+# bone weighting 0.658824, anchor 0
+v 0.105300 0.515100 3.655200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.543000 0.143700 3.655200
+# bone binding 0 0
+# bone weighting 0.494118, anchor 0
+v -0.696000 0.413100 2.992800
+# bone binding 0 1
+# bone weighting 0.658824, anchor 0
+v -0.046500 0.781800 2.992800
+# bone binding 0 1
+# bone weighting 0.658824, anchor 0
+v -0.017100 0.573000 2.834400
+# bone binding 0 1
+# bone weighting 0.549020, anchor 0
+v 0.424800 0.424800 2.834400
+# bone binding 0 1
+# bone weighting 0.549020, anchor 0
+v 0.424800 0.583500 2.388000
+# bone binding 1 0
+# bone weighting 0.737255, anchor 0
+v -0.017100 0.732000 2.388000
+# bone binding 1 0
+# bone weighting 0.737255, anchor 0
+v -0.460500 0.424800 2.834400
+# bone binding 0 1
+# bone weighting 0.549020, anchor 0
+v -0.460500 0.583500 2.388000
+# bone binding 1 0
+# bone weighting 0.737255, anchor 0
+# Number of texture vertices: 145
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.500000 -0.500000
+vt 0.000000 -0.500000
+vt 0.500000 0.000000
+vt 0.000000 0.000000
+vt 0.500000 -0.500000
+vt 0.000000 -0.500000
+vt 0.500000 0.000000
+vt 0.253906 -0.570312
+vt 0.585938 -0.843750
+vt 0.253906 -0.843750
+vt 0.585938 -0.570312
+vt 0.902344 -0.023438
+vt 0.000000 -0.457031
+vt 0.902344 -0.457031
+vt 0.000000 -0.023438
+vt 0.902344 -0.023438
+vt 0.000000 -0.457031
+vt 0.902344 -0.457031
+vt 0.000000 -0.023438
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 0.000000
+# Texture 0
+#  Rendering mode: 01
+#  Flags: enviro
+#  Alpha: 255
+#  Number of triangles: 156
+usemtl material0
+f 69/1 74/1 61/1
+f 69/1 61/1 56/1
+f 74/1 75/1 62/1
+f 74/1 62/1 61/1
+f 75/1 73/1 60/1
+f 75/1 60/1 62/1
+f 80/1 67/1 60/1
+f 80/1 60/1 73/1
+f 79/1 66/1 67/1
+f 79/1 67/1 80/1
+f 76/1 63/1 66/1
+f 76/1 66/1 79/1
+f 76/1 77/1 64/1
+f 76/1 64/1 63/1
+f 77/1 78/1 65/1
+f 77/1 65/1 64/1
+f 78/1 70/1 57/1
+f 78/1 57/1 65/1
+f 72/1 59/1 57/1
+f 72/1 57/1 70/1
+f 71/1 58/1 59/1
+f 71/1 59/1 72/1
+f 69/1 56/1 58/1
+f 69/1 58/1 71/1
+f 68/1 69/1 71/1
+f 68/1 71/1 72/1
+f 68/1 72/1 70/1
+f 68/1 70/1 78/1
+f 68/1 78/1 77/1
+f 68/1 77/1 76/1
+f 68/1 76/1 79/1
+f 68/1 79/1 80/1
+f 68/1 80/1 73/1
+f 68/1 73/1 75/1
+f 68/1 75/1 74/1
+f 68/1 74/1 69/1
+f 56/1 46/1 58/1
+f 56/1 44/1 46/1
+f 58/1 47/1 59/1
+f 58/1 46/1 47/1
+f 59/1 45/1 57/1
+f 59/1 47/1 45/1
+f 65/1 45/1 53/1
+f 65/1 57/1 45/1
+f 64/1 53/1 52/1
+f 64/1 65/1 53/1
+f 63/1 52/1 51/1
+f 63/1 64/1 52/1
+f 63/1 54/1 66/1
+f 63/1 51/1 54/1
+f 66/1 55/1 67/1
+f 66/1 54/1 55/1
+f 67/1 48/1 60/1
+f 67/1 55/1 48/1
+f 62/1 48/1 50/1
+f 62/1 60/1 48/1
+f 61/1 50/1 49/1
+f 61/1 62/1 50/1
+f 56/1 49/1 44/1
+f 56/1 61/1 49/1
+f 44/1 3/1 46/1
+f 44/1 1/1 3/1
+f 46/1 4/1 47/1
+f 46/1 3/1 4/1
+f 47/1 2/1 45/1
+f 47/1 4/1 2/1
+f 53/1 2/1 10/1
+f 53/1 45/1 2/1
+f 52/1 10/1 9/1
+f 52/1 53/1 10/1
+f 51/1 9/1 8/1
+f 51/1 52/1 9/1
+f 51/1 11/1 54/1
+f 51/1 8/1 11/1
+f 54/1 12/1 55/1
+f 54/1 11/1 12/1
+f 55/1 5/1 48/1
+f 55/1 12/1 5/1
+f 50/1 5/1 7/1
+f 50/1 48/1 5/1
+f 49/1 7/1 6/1
+f 49/1 50/1 7/1
+f 44/1 6/1 1/1
+f 44/1 49/1 6/1
+f 10/1 14/1 29/1
+f 10/1 2/1 14/1
+f 9/1 29/1 28/1
+f 9/1 10/1 29/1
+f 8/1 28/1 27/1
+f 8/1 9/1 28/1
+f 8/1 30/1 11/1
+f 8/1 27/1 30/1
+f 11/1 31/1 12/1
+f 11/1 30/1 31/1
+f 12/1 17/1 5/1
+f 12/1 31/1 17/1
+f 7/1 17/1 19/1
+f 7/1 5/1 17/1
+f 6/1 19/1 18/1
+f 6/1 7/1 19/1
+f 1/1 18/1 13/1
+f 1/1 6/1 18/1
+f 1/1 15/1 3/1
+f 1/1 13/1 15/1
+f 3/1 16/1 4/1
+f 3/1 15/1 16/1
+f 4/1 14/1 2/1
+f 4/1 16/1 14/1
+f 16/1 23/1 21/1
+f 16/1 21/1 14/1
+f 15/1 22/1 23/1
+f 15/1 23/1 16/1
+f 13/1 20/1 22/1
+f 13/1 22/1 15/1
+f 13/1 18/1 25/1
+f 13/1 25/1 20/1
+f 18/1 19/1 26/1
+f 18/1 26/1 25/1
+f 19/1 17/1 24/1
+f 19/1 24/1 26/1
+f 31/1 36/1 24/1
+f 31/1 24/1 17/1
+f 30/1 35/1 36/1
+f 30/1 36/1 31/1
+f 27/1 32/1 35/1
+f 27/1 35/1 30/1
+f 27/1 28/1 33/1
+f 27/1 33/1 32/1
+f 28/1 29/1 34/1
+f 28/1 34/1 33/1
+f 29/1 14/1 21/1
+f 29/1 21/1 34/1
+f 37/1 40/1 43/1
+f 42/1 39/1 37/1
+f 42/1 21/1 39/1
+f 40/1 24/1 43/1
+f 37/1 41/1 42/1
+f 42/1 33/1 34/1
+f 34/1 21/1 42/1
+f 33/1 41/1 32/1
+f 33/1 42/1 41/1
+f 35/1 41/1 43/1
+f 35/1 32/1 41/1
+f 36/1 43/1 24/1
+f 43/1 36/1 35/1
+f 37/1 43/1 41/1
+f 37/1 38/1 40/1
+f 40/1 25/1 26/1
+f 26/1 24/1 40/1
+f 25/1 38/1 20/1
+f 25/1 40/1 38/1
+f 22/1 38/1 39/1
+f 22/1 20/1 38/1
+f 23/1 39/1 21/1
+f 39/1 23/1 22/1
+f 37/1 39/1 38/1
+# Texture 2
+#  Rendering mode: 01
+#  Flags: noline
+#  Alpha: 246
+#  Number of triangles: 4
+usemtl material2
+f 89/18 94/19 93/21
+f 89/18 92/20 94/19
+f 89/14 91/15 92/16
+f 89/14 90/17 91/15
+# Texture 3
+#  Rendering mode: 01
+#  Flags: color eye noline
+#  Alpha: 253
+#  Number of triangles: 4
+usemtl material3
+f 85/6 87/7 86/9
+f 85/6 88/8 87/7
+f 81/2 83/3 84/4
+f 81/2 82/5 83/3
+# Number of joints: 4
+#  Joint 0, size 1.110000
+#  Joint 1, size 1.110000
+#  Joint 2, size 1.110000
+#  Joint 3, size 1.845000
+# Number of bones: 3
+#  Bone 0, id 0, joints 0 1
+#  Bone 1, id 0, joints 1 3
+#  Bone 2, id 0, joints 3 2
+
+# Bone frame 0
+#  Action name: boning (00)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 4.249200
+#  Joint 1: 0.000000, 0.000000, 2.749200
+#  Joint 2: 0.000000, 0.000000, 0.000000
+#  Joint 3: 0.000000, 0.000000, 1.249200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 1
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000397
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001251
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002045
+#  Joint 0: 0.000000, 0.001800, 4.003800
+#  Joint 1: 0.000000, 0.001800, 2.576100
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.165200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 2
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000366
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001282
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002075
+#  Joint 0: 0.000000, 0.001800, 4.063800
+#  Joint 1: 0.000000, 0.001800, 2.536800
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.144200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 3
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000366
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001312
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002136
+#  Joint 0: 0.000000, 0.001800, 4.080300
+#  Joint 1: 0.000000, 0.001800, 2.472900
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.114200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 4
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000336
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001343
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002228
+#  Joint 0: 0.000000, 0.001800, 4.038900
+#  Joint 1: 0.000000, 0.001800, 2.389200
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.070400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 5
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000336
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001404
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002319
+#  Joint 0: 0.000000, 0.001800, 3.960600
+#  Joint 1: 0.000000, 0.001800, 2.300700
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.023600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 6
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000366
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001434
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002381
+#  Joint 0: 0.000000, 0.001800, 3.846300
+#  Joint 1: 0.000000, 0.001800, 2.242800
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.000500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 7
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000397
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001465
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002381
+#  Joint 0: 0.000000, 0.001800, 3.714300
+#  Joint 1: 0.000000, 0.001800, 2.202900
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 0.993000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 8
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000397
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001495
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002350
+#  Joint 0: 0.000000, 0.001800, 3.604200
+#  Joint 1: 0.000000, 0.001800, 2.195700
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.012200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 9
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000458
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001526
+#  Bone 2 forward normal: 0.000000, -0.999997, 0.002258
+#  Joint 0: 0.000000, 0.001800, 3.506400
+#  Joint 1: 0.000000, 0.001800, 2.210100
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.043700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 10
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000488
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001526
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002197
+#  Joint 0: 0.000000, 0.001800, 3.438300
+#  Joint 1: 0.000000, 0.001800, 2.252100
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.082400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 11
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000549
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001495
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002106
+#  Joint 0: 0.000000, 0.001800, 3.386700
+#  Joint 1: 0.000000, 0.001800, 2.308800
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.123500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 12
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000580
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001465
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002045
+#  Joint 0: 0.000000, 0.001800, 3.361200
+#  Joint 1: 0.000000, 0.001800, 2.362500
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.156500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 13
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000610
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001434
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002014
+#  Joint 0: 0.000000, 0.001800, 3.355800
+#  Joint 1: 0.000000, 0.001800, 2.415000
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.185900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 14
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000641
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001404
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.001984
+#  Joint 0: 0.000000, 0.001800, 3.396000
+#  Joint 1: 0.000000, 0.001800, 2.462400
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.198800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 15
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000610
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001373
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.001984
+#  Joint 0: 0.000000, 0.001800, 3.469200
+#  Joint 1: 0.000000, 0.001800, 2.507100
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.201800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 16
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000549
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001312
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.001984
+#  Joint 0: 0.000000, 0.001800, 3.588600
+#  Joint 1: 0.000000, 0.001800, 2.538900
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.195200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 17
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000488
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001282
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002014
+#  Joint 0: 0.000000, 0.001800, 3.734100
+#  Joint 1: 0.000000, 0.001800, 2.563800
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.183800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 18
+#  Action name: stand (01)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000458
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001282
+#  Bone 2 forward normal: 0.000000, -0.999998, 0.002014
+#  Joint 0: 0.000000, 0.001800, 3.881400
+#  Joint 1: 0.000000, 0.001800, 2.580300
+#  Joint 2: 0.000000, -0.001800, -0.003900
+#  Joint 3: 0.000000, 0.000000, 1.176600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476600
+#   Vertex 1: X -1.516200, Y -1.476600
+#   Vertex 2: X -1.516200, Y -1.476600
+#   Vertex 3: X -1.516200, Y -1.476600
+
+# Bone frame 19
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999999, 0.001007
+#  Bone 1 forward normal: 0.000000, -0.999997, 0.002289
+#  Bone 2 forward normal: 0.000000, -0.999994, 0.003388
+#  Joint 0: 0.000000, 0.003900, 4.100400
+#  Joint 1: 0.000000, 0.001800, 2.626500
+#  Joint 2: 0.000000, -0.003900, -0.001800
+#  Joint 3: 0.000000, 0.000000, 1.163700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516500, Y -1.476000
+#   Vertex 1: X -1.516500, Y -1.476000
+#   Vertex 2: X -1.516500, Y -1.476000
+#   Vertex 3: X -1.516500, Y -1.476000
+
+# Bone frame 20
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000183
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000183
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000519
+#  Joint 0: 0.000000, 0.000000, 4.158300
+#  Joint 1: 0.000000, 0.000000, 2.574900
+#  Joint 2: 0.000000, 0.000000, -0.005100
+#  Joint 3: 0.000000, 0.000000, 1.098300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 21
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000031
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000061
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000153
+#  Joint 0: 0.000000, 0.000000, 4.088400
+#  Joint 1: 0.000000, 0.000000, 2.436600
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.007100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 22
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000031
+#  Joint 0: 0.000000, 0.000000, 3.977100
+#  Joint 1: 0.000000, 0.000000, 2.270700
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.925500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 23
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.826800
+#  Joint 1: 0.000000, 0.000000, 2.085300
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.860100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 24
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.646500
+#  Joint 1: 0.000000, 0.000000, 1.916400
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.820200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 25
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.449400
+#  Joint 1: 0.000000, 0.000000, 1.805100
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.812400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 26
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.252900
+#  Joint 1: 0.000000, 0.000000, 1.754700
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.823800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 27
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.080700
+#  Joint 1: 0.000900, 0.000000, 1.764000
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.845700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 28
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.944800
+#  Joint 1: 0.003900, 0.000000, 1.807800
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.869100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515600, Y -1.476000
+#   Vertex 1: X -1.515600, Y -1.476000
+#   Vertex 2: X -1.515600, Y -1.476000
+#   Vertex 3: X -1.515600, Y -1.476000
+
+# Bone frame 29
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.855100
+#  Joint 1: 0.006000, 0.000000, 1.880400
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.891000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515600, Y -1.474500
+#   Vertex 1: X -1.515600, Y -1.474500
+#   Vertex 2: X -1.515600, Y -1.474500
+#   Vertex 3: X -1.515600, Y -1.474500
+
+# Bone frame 30
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.808900
+#  Joint 1: 0.006300, 0.000000, 1.969500
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.912600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515600, Y -1.474500
+#   Vertex 1: X -1.515600, Y -1.474500
+#   Vertex 2: X -1.515600, Y -1.474500
+#   Vertex 3: X -1.515600, Y -1.474500
+
+# Bone frame 31
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.806500
+#  Joint 1: 0.004500, 0.000000, 2.062500
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 0.934500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515600, Y -1.475400
+#   Vertex 1: X -1.515600, Y -1.475400
+#   Vertex 2: X -1.515600, Y -1.475400
+#   Vertex 3: X -1.515600, Y -1.475400
+
+# Bone frame 32
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.855100
+#  Joint 1: 0.001800, 0.000000, 2.144100
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 0.956400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476600
+#   Vertex 1: X -1.515900, Y -1.476600
+#   Vertex 2: X -1.515900, Y -1.476600
+#   Vertex 3: X -1.515900, Y -1.476600
+
+# Bone frame 33
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 2.944800
+#  Joint 1: 0.000000, 0.000000, 2.213100
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 0.976800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 34
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.077700
+#  Joint 1: 0.000000, 0.000000, 2.269800
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 0.994800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 35
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.242700
+#  Joint 1: 0.000000, 0.000000, 2.320200
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.013700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 36
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.423000
+#  Joint 1: 0.000000, 0.000000, 2.368500
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.031400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 37
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.603300
+#  Joint 1: 0.000000, 0.000000, 2.424300
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.055100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 38
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.779400
+#  Joint 1: 0.000000, 0.000000, 2.485200
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.087500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 39
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.941100
+#  Joint 1: 0.000000, 0.000000, 2.543100
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.128600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 40
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 4.071900
+#  Joint 1: 0.000000, 0.000000, 2.580000
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.164300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516200, Y -1.476900
+#   Vertex 1: X -1.516200, Y -1.476900
+#   Vertex 2: X -1.516200, Y -1.476900
+#   Vertex 3: X -1.516200, Y -1.476900
+
+# Bone frame 41
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.003000, 0.000000, 4.162500
+#  Joint 1: 0.000000, 0.000000, 2.580900
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.185900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.517700, Y -1.476600
+#   Vertex 1: X -1.517700, Y -1.476600
+#   Vertex 2: X -1.517700, Y -1.476600
+#   Vertex 3: X -1.517700, Y -1.476600
+
+# Bone frame 42
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.006600, 0.000000, 4.205700
+#  Joint 1: 0.000000, 0.000000, 2.534700
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.189500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.519500, Y -1.475400
+#   Vertex 1: X -1.519500, Y -1.475400
+#   Vertex 2: X -1.519500, Y -1.475400
+#   Vertex 3: X -1.519500, Y -1.475400
+
+# Bone frame 43
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.009600, 0.000000, 4.197600
+#  Joint 1: 0.000000, 0.000000, 2.439600
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.174500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.520700, Y -1.475400
+#   Vertex 1: X -1.520700, Y -1.475400
+#   Vertex 2: X -1.520700, Y -1.475400
+#   Vertex 3: X -1.520700, Y -1.475400
+
+# Bone frame 44
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.010800, 0.000000, 4.154400
+#  Joint 1: 0.000000, 0.000000, 2.325300
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.151400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.521300, Y -1.474500
+#   Vertex 1: X -1.521300, Y -1.474500
+#   Vertex 2: X -1.521300, Y -1.474500
+#   Vertex 3: X -1.521300, Y -1.474500
+
+# Bone frame 45
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.009300, 0.000000, 4.076100
+#  Joint 1: 0.000000, 0.000000, 2.206800
+#  Joint 2: 0.000000, 0.000000, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.124100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.520700, Y -1.475400
+#   Vertex 1: X -1.520700, Y -1.475400
+#   Vertex 2: X -1.520700, Y -1.475400
+#   Vertex 3: X -1.520700, Y -1.475400
+
+# Bone frame 46
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: -0.004500, 0.000000, 3.958500
+#  Joint 1: 0.000000, 0.000000, 2.101800
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.098300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.518300, Y -1.476000
+#   Vertex 1: X -1.518300, Y -1.476000
+#   Vertex 2: X -1.518300, Y -1.476000
+#   Vertex 3: X -1.518300, Y -1.476000
+
+# Bone frame 47
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.000000, 0.000000, 3.796800
+#  Joint 1: 0.000000, 0.000000, 2.022600
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.074600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.476900
+#   Vertex 1: X -1.515900, Y -1.476900
+#   Vertex 2: X -1.515900, Y -1.476900
+#   Vertex 3: X -1.515900, Y -1.476900
+
+# Bone frame 48
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.005400, 0.000000, 3.619500
+#  Joint 1: 0.000000, 0.000000, 1.965900
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.053900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.512900, Y -1.478100
+#   Vertex 1: X -1.512900, Y -1.478100
+#   Vertex 2: X -1.512900, Y -1.478100
+#   Vertex 3: X -1.512900, Y -1.478100
+
+# Bone frame 49
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.010500, 0.000000, 3.437400
+#  Joint 1: 0.000000, 0.000000, 1.935000
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.033800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.510500, Y -1.479600
+#   Vertex 1: X -1.510500, Y -1.479600
+#   Vertex 2: X -1.510500, Y -1.479600
+#   Vertex 3: X -1.510500, Y -1.479600
+
+# Bone frame 50
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.013200, 0.000000, 3.252900
+#  Joint 1: 0.000000, 0.000000, 1.922100
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 1.013700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.509000, Y -1.480200
+#   Vertex 1: X -1.509000, Y -1.480200
+#   Vertex 2: X -1.509000, Y -1.480200
+#   Vertex 3: X -1.509000, Y -1.480200
+
+# Bone frame 51
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.013500, 0.000000, 3.070500
+#  Joint 1: 0.000000, 0.000000, 1.922700
+#  Joint 2: 0.000000, 0.000000, -0.007500
+#  Joint 3: 0.000000, 0.000000, 0.994800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.509000, Y -1.480500
+#   Vertex 1: X -1.509000, Y -1.480500
+#   Vertex 2: X -1.509000, Y -1.480500
+#   Vertex 3: X -1.509000, Y -1.480500
+
+# Bone frame 52
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.012000, 0.000000, 2.900700
+#  Joint 1: -0.000600, 0.000000, 1.932900
+#  Joint 2: -0.000600, 0.000000, -0.007500
+#  Joint 3: -0.000600, 0.000000, 0.978300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.510200, Y -1.480500
+#   Vertex 1: X -1.510200, Y -1.480500
+#   Vertex 2: X -1.510200, Y -1.480500
+#   Vertex 3: X -1.510200, Y -1.480500
+
+# Bone frame 53
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000458
+#  Bone 1 forward normal: 0.000000, -1.000000, 0.000214
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000000
+#  Joint 0: 0.009900, 0.000000, 2.755200
+#  Joint 1: -0.002700, 0.000000, 1.950000
+#  Joint 2: -0.002700, 0.000000, -0.007200
+#  Joint 3: -0.002700, 0.000000, 0.963900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.512300, Y -1.480500
+#   Vertex 1: X -1.512300, Y -1.480500
+#   Vertex 2: X -1.512300, Y -1.480500
+#   Vertex 3: X -1.512300, Y -1.480500
+
+# Bone frame 54
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000153, -0.999994, 0.003540
+#  Bone 1 forward normal: 0.000000, -0.999999, 0.001068
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000061
+#  Joint 0: 0.007800, 0.001800, 2.656200
+#  Joint 1: -0.004200, 0.000000, 1.977300
+#  Joint 2: -0.004200, -0.001800, -0.005100
+#  Joint 3: -0.004200, -0.000900, 0.956700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.514400, Y -1.480200
+#   Vertex 1: X -1.514400, Y -1.480200
+#   Vertex 2: X -1.514400, Y -1.480200
+#   Vertex 3: X -1.514400, Y -1.480200
+
+# Bone frame 55
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000519, -0.999917, 0.012879
+#  Bone 1 forward normal: 0.000000, -0.999995, 0.003082
+#  Bone 2 forward normal: 0.000000, -1.000000, 0.000305
+#  Joint 0: 0.006300, 0.005100, 2.609700
+#  Joint 1: -0.004800, -0.001800, 2.016300
+#  Joint 2: -0.004800, -0.005100, -0.005100
+#  Joint 3: -0.004800, -0.005100, 0.954900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515300, Y -1.481700
+#   Vertex 1: X -1.515300, Y -1.481700
+#   Vertex 2: X -1.515300, Y -1.481700
+#   Vertex 3: X -1.515300, Y -1.481700
+
+# Bone frame 56
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.001343, -0.999356, 0.035860
+#  Bone 1 forward normal: 0.000000, -0.999963, 0.008576
+#  Bone 2 forward normal: 0.000000, -0.999999, 0.001465
+#  Joint 0: 0.004800, 0.015600, 2.634900
+#  Joint 1: -0.004200, -0.003900, 2.067900
+#  Joint 2: -0.004200, -0.015000, -0.001800
+#  Joint 3: -0.004200, -0.012900, 0.962100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.516500, Y -1.481700
+#   Vertex 1: X -1.516500, Y -1.481700
+#   Vertex 2: X -1.516500, Y -1.481700
+#   Vertex 3: X -1.516500, Y -1.481700
+
+# Bone frame 57
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.002106, -0.997269, 0.073825
+#  Bone 1 forward normal: 0.000000, -0.999808, 0.019593
+#  Bone 2 forward normal: 0.000000, -0.999986, 0.005249
+#  Joint 0: 0.003000, 0.036300, 2.751300
+#  Joint 1: -0.002700, -0.007800, 2.139000
+#  Joint 2: -0.002700, -0.036300, 0.003900
+#  Joint 3: -0.002700, -0.031200, 0.984000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.541400, Y -1.462500
+#   Vertex 1: X -1.541400, Y -1.462500
+#   Vertex 2: X -1.541400, Y -1.462500
+#   Vertex 3: X -1.541400, Y -1.462500
+
+# Bone frame 58
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.002136, -0.993556, 0.113318
+#  Bone 1 forward normal: 0.000000, -0.999329, 0.036622
+#  Bone 2 forward normal: 0.000000, -0.999901, 0.014039
+#  Joint 0: 0.000900, 0.069000, 2.929500
+#  Joint 1: -0.000900, -0.010500, 2.227500
+#  Joint 2: -0.000900, -0.068100, 0.024600
+#  Joint 3: -0.000900, -0.054300, 1.027800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.563000, Y -1.448700
+#   Vertex 1: X -1.563000, Y -1.448700
+#   Vertex 2: X -1.563000, Y -1.448700
+#   Vertex 3: X -1.563000, Y -1.448700
+
+# Bone frame 59
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.001617, -0.988503, 0.151190
+#  Bone 1 forward normal: 0.000000, -0.998169, 0.060490
+#  Bone 2 forward normal: 0.000000, -0.999486, 0.032045
+#  Joint 0: 0.000000, 0.116400, 3.163200
+#  Joint 1: 0.000000, -0.007800, 2.339700
+#  Joint 2: 0.000000, -0.116400, 0.066000
+#  Joint 3: 0.000000, -0.083400, 1.104000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.570500, Y -1.454400
+#   Vertex 1: X -1.570500, Y -1.454400
+#   Vertex 2: X -1.570500, Y -1.454400
+#   Vertex 3: X -1.570500, Y -1.454400
+
+# Bone frame 60
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000916, -0.982535, 0.186076
+#  Bone 1 forward normal: 0.000000, -0.996215, 0.086919
+#  Bone 2 forward normal: 0.000000, -0.997987, 0.063418
+#  Joint 0: 0.000000, 0.180300, 3.432000
+#  Joint 1: 0.000000, -0.000900, 2.472000
+#  Joint 2: 0.000000, -0.179400, 0.132000
+#  Joint 3: 0.000000, -0.110700, 1.213200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.581600, Y -1.461000
+#   Vertex 1: X -1.581600, Y -1.461000
+#   Vertex 2: X -1.581600, Y -1.461000
+#   Vertex 3: X -1.581600, Y -1.461000
+
+# Bone frame 61
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000397, -0.976296, 0.216439
+#  Bone 1 forward normal: 0.000000, -0.994305, 0.106572
+#  Bone 2 forward normal: 0.000000, -0.991243, 0.132054
+#  Joint 0: 0.000000, 0.264000, 3.728700
+#  Joint 1: 0.000000, 0.021300, 2.633400
+#  Joint 2: 0.000000, -0.264000, 0.239100
+#  Joint 3: 0.000000, -0.112500, 1.372500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.596600, Y -1.456800
+#   Vertex 1: X -1.596600, Y -1.456800
+#   Vertex 2: X -1.596600, Y -1.456800
+#   Vertex 3: X -1.596600, Y -1.456800
+
+# Bone frame 62
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000153, -0.971231, 0.238138
+#  Bone 1 forward normal: 0.000000, -0.994170, 0.107825
+#  Bone 2 forward normal: 0.000000, -0.967345, 0.253464
+#  Joint 0: 0.000000, 0.370800, 4.040400
+#  Joint 1: 0.000000, 0.073500, 2.826300
+#  Joint 2: 0.000000, -0.370800, 0.397200
+#  Joint 3: 0.000000, -0.060000, 1.578900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.613400, Y -1.423500
+#   Vertex 1: X -1.613400, Y -1.423500
+#   Vertex 2: X -1.613400, Y -1.423500
+#   Vertex 3: X -1.613400, Y -1.423500
+
+# Bone frame 63
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000031, -0.964023, 0.265818
+#  Bone 1 forward normal: 0.000000, -0.994643, 0.103368
+#  Bone 2 forward normal: 0.000000, -0.926498, 0.376300
+#  Joint 0: 0.000000, 0.486600, 4.337700
+#  Joint 1: 0.000000, 0.130200, 3.043800
+#  Joint 2: 0.000000, -0.486600, 0.597600
+#  Joint 3: 0.000000, 0.000900, 1.800600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.679100, Y -1.339500
+#   Vertex 1: X -1.679100, Y -1.339500
+#   Vertex 2: X -1.679100, Y -1.339500
+#   Vertex 3: X -1.679100, Y -1.339500
+
+# Bone frame 64
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.949843, 0.312728
+#  Bone 1 forward normal: 0.000000, -0.992921, 0.118778
+#  Bone 2 forward normal: 0.000000, -0.895893, 0.444269
+#  Joint 0: 0.000000, 0.590100, 4.590900
+#  Joint 1: 0.000000, 0.157500, 3.273600
+#  Joint 2: 0.000000, -0.590100, 0.822000
+#  Joint 3: 0.000000, 0.007800, 2.032800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.757100, Y -1.290600
+#   Vertex 1: X -1.757100, Y -1.290600
+#   Vertex 2: X -1.757100, Y -1.290600
+#   Vertex 3: X -1.757100, Y -1.290600
+
+# Bone frame 65
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.932845, 0.360277
+#  Bone 1 forward normal: 0.000000, -0.986209, 0.165503
+#  Bone 2 forward normal: 0.000000, -0.891620, 0.452784
+#  Joint 0: 0.000000, 0.656100, 4.758000
+#  Joint 1: 0.000000, 0.168900, 3.497100
+#  Joint 2: 0.000000, -0.656100, 1.045800
+#  Joint 3: 0.000000, -0.036300, 2.263500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.796400, Y -1.318200
+#   Vertex 1: X -1.796400, Y -1.318200
+#   Vertex 2: X -1.796400, Y -1.318200
+#   Vertex 3: X -1.796400, Y -1.318200
+
+# Bone frame 66
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.917400, 0.397967
+#  Bone 1 forward normal: 0.000000, -0.977536, 0.210767
+#  Bone 2 forward normal: 0.000000, -0.908059, 0.418841
+#  Joint 0: 0.000000, 0.665400, 4.819500
+#  Joint 1: 0.000000, 0.168600, 3.674100
+#  Joint 2: 0.000000, -0.660900, 1.212600
+#  Joint 3: 0.000000, -0.098400, 2.430600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.821300, Y -1.340100
+#   Vertex 1: X -1.821300, Y -1.340100
+#   Vertex 2: X -1.821300, Y -1.340100
+#   Vertex 3: X -1.821300, Y -1.340100
+
+# Bone frame 67
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.901200, 0.433403
+#  Bone 1 forward normal: 0.000000, -0.973802, 0.227397
+#  Bone 2 forward normal: 0.000000, -0.940905, 0.338671
+#  Joint 0: 0.000000, 0.627300, 4.795200
+#  Joint 1: 0.000000, 0.135600, 3.773100
+#  Joint 2: 0.000000, -0.597600, 1.284300
+#  Joint 3: 0.000000, -0.161700, 2.496300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.780500, Y -1.404300
+#   Vertex 1: X -1.780500, Y -1.404300
+#   Vertex 2: X -1.780500, Y -1.404300
+#   Vertex 3: X -1.780500, Y -1.404300
+
+# Bone frame 68
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.886768, 0.462214
+#  Bone 1 forward normal: 0.000000, -0.974270, 0.225386
+#  Bone 2 forward normal: 0.000000, -0.982199, 0.187846
+#  Joint 0: 0.000000, 0.568500, 4.731300
+#  Joint 1: 0.000000, 0.087000, 3.808200
+#  Joint 2: 0.000000, -0.448200, 1.277100
+#  Joint 3: 0.000000, -0.215400, 2.495700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.736100, Y -1.443600
+#   Vertex 1: X -1.736100, Y -1.443600
+#   Vertex 2: X -1.736100, Y -1.443600
+#   Vertex 3: X -1.736100, Y -1.443600
+
+# Bone frame 69
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.879109, 0.476620
+#  Bone 1 forward normal: 0.000000, -0.981222, 0.192881
+#  Bone 2 forward normal: 0.000000, -0.998487, -0.054995
+#  Joint 0: 0.000000, 0.502800, 4.646700
+#  Joint 1: 0.000000, 0.033900, 3.781500
+#  Joint 2: 0.000000, -0.158400, 1.195200
+#  Joint 3: 0.000000, -0.227700, 2.448900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.687200, Y -1.407000
+#   Vertex 1: X -1.687200, Y -1.407000
+#   Vertex 2: X -1.687200, Y -1.407000
+#   Vertex 3: X -1.687200, Y -1.407000
+
+# Bone frame 70
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.880628, 0.473809
+#  Bone 1 forward normal: 0.000000, -0.993986, 0.109504
+#  Bone 2 forward normal: 0.000000, -0.963854, -0.266432
+#  Joint 0: 0.000000, 0.445500, 4.557900
+#  Joint 1: 0.000000, -0.012300, 3.704100
+#  Joint 2: 0.000000, 0.195000, 1.092600
+#  Joint 3: 0.000000, -0.159000, 2.374800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.580700, Y -1.361100
+#   Vertex 1: X -1.580700, Y -1.361100
+#   Vertex 2: X -1.580700, Y -1.361100
+#   Vertex 3: X -1.580700, Y -1.361100
+
+# Bone frame 71
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.895317, 0.445430
+#  Bone 1 forward normal: 0.000000, -0.999995, 0.003082
+#  Bone 2 forward normal: 0.000000, -0.928870, -0.370407
+#  Joint 0: 0.000000, 0.407400, 4.459200
+#  Joint 1: 0.000000, -0.032100, 3.573300
+#  Joint 2: 0.000000, 0.454500, 1.007700
+#  Joint 3: 0.000000, -0.036300, 2.241900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.491300, Y -1.331100
+#   Vertex 1: X -1.491300, Y -1.331100
+#   Vertex 2: X -1.491300, Y -1.331100
+#   Vertex 3: X -1.491300, Y -1.331100
+
+# Bone frame 72
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.921199, 0.389092
+#  Bone 1 forward normal: 0.000000, -0.995942, -0.089999
+#  Bone 2 forward normal: 0.000000, -0.946780, -0.321880
+#  Joint 0: 0.000000, 0.389100, 4.346100
+#  Joint 1: 0.000000, -0.015600, 3.385800
+#  Joint 2: 0.000000, 0.511800, 0.813000
+#  Joint 3: 0.000000, 0.108900, 1.995300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.481700, Y -1.270800
+#   Vertex 1: X -1.481700, Y -1.270800
+#   Vertex 2: X -1.481700, Y -1.270800
+#   Vertex 3: X -1.481700, Y -1.270800
+
+# Bone frame 73
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.944438, 0.328689
+#  Bone 1 forward normal: 0.000000, -0.992774, -0.120000
+#  Bone 2 forward normal: 0.000000, -0.994735, -0.102483
+#  Joint 0: 0.000000, 0.386400, 4.214100
+#  Joint 1: 0.000000, 0.017700, 3.155100
+#  Joint 2: 0.000000, 0.316200, 0.510000
+#  Joint 3: 0.000000, 0.195900, 1.683600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.492200, Y -1.261200
+#   Vertex 1: X -1.492200, Y -1.261200
+#   Vertex 2: X -1.492200, Y -1.261200
+#   Vertex 3: X -1.492200, Y -1.261200
+
+# Bone frame 74
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.958469, 0.285197
+#  Bone 1 forward normal: 0.000000, -0.998137, -0.061008
+#  Bone 2 forward normal: 0.000000, -0.995972, 0.089663
+#  Joint 0: 0.000000, 0.396300, 4.059600
+#  Joint 1: 0.000000, 0.048600, 2.890200
+#  Joint 2: 0.000000, 0.033900, 0.234600
+#  Joint 3: 0.000000, 0.138900, 1.403400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.563000, Y -1.274400
+#   Vertex 1: X -1.563000, Y -1.274400
+#   Vertex 2: X -1.563000, Y -1.274400
+#   Vertex 3: X -1.563000, Y -1.274400
+
+# Bone frame 75
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.965049, 0.262069
+#  Bone 1 forward normal: 0.000000, -0.998610, 0.052706
+#  Bone 2 forward normal: 0.000000, -0.984753, 0.173958
+#  Joint 0: 0.000000, 0.408300, 3.880200
+#  Joint 1: 0.000000, 0.065100, 2.616300
+#  Joint 2: 0.000000, -0.204000, 0.089700
+#  Joint 3: 0.000000, -0.007800, 1.191000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.600200, Y -1.370400
+#   Vertex 1: X -1.600200, Y -1.370400
+#   Vertex 2: X -1.600200, Y -1.370400
+#   Vertex 3: X -1.600200, Y -1.370400
+
+# Bone frame 76
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.121094
+#  Bone 0 forward normal: 0.000000, -0.966986, 0.254831
+#  Bone 1 forward normal: 0.000000, -0.986676, 0.162696
+#  Bone 2 forward normal: 0.000000, -0.983091, 0.183116
+#  Joint 0: 0.000000, 0.408300, 3.675300
+#  Joint 1: 0.000000, 0.063300, 2.367600
+#  Joint 2: 0.000000, -0.340800, 0.040200
+#  Joint 3: 0.000000, -0.157500, 1.022100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.679700, Y -1.414200
+#   Vertex 1: X -1.679700, Y -1.414200
+#   Vertex 2: X -1.679700, Y -1.414200
+#   Vertex 3: X -1.679700, Y -1.414200
+
+# Bone frame 77
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.097656
+#  Bone 0 forward normal: 0.000000, -0.966053, 0.258345
+#  Bone 1 forward normal: 0.000000, -0.974908, 0.222608
+#  Bone 2 forward normal: 0.000000, -0.987837, 0.155494
+#  Joint 0: 0.000000, 0.392700, 3.446700
+#  Joint 1: 0.000000, 0.048300, 2.158500
+#  Joint 2: 0.000000, -0.375300, 0.029100
+#  Joint 3: 0.000000, -0.238200, 0.900300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.693200, Y -1.461000
+#   Vertex 1: X -1.693200, Y -1.461000
+#   Vertex 2: X -1.693200, Y -1.461000
+#   Vertex 3: X -1.693200, Y -1.461000
+
+# Bone frame 78
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.074219
+#  Bone 0 forward normal: 0.000000, -0.962919, 0.269792
+#  Bone 1 forward normal: 0.000000, -0.971737, 0.236067
+#  Bone 2 forward normal: 0.000000, -0.991424, 0.130684
+#  Joint 0: 0.000000, 0.366300, 3.201300
+#  Joint 1: 0.000000, 0.026700, 1.988100
+#  Joint 2: 0.000000, -0.362400, 0.033000
+#  Joint 3: 0.000000, -0.260400, 0.801900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.687800, Y -1.475400
+#   Vertex 1: X -1.687800, Y -1.475400
+#   Vertex 2: X -1.687800, Y -1.475400
+#   Vertex 3: X -1.687800, Y -1.475400
+
+# Bone frame 79
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.035156
+#  Bone 0 forward normal: 0.000000, -0.957592, 0.288129
+#  Bone 1 forward normal: 0.000000, -0.973873, 0.227095
+#  Bone 2 forward normal: 0.000000, -0.993834, 0.110877
+#  Joint 0: 0.000000, 0.335100, 2.952000
+#  Joint 1: 0.000000, 0.005100, 1.856100
+#  Joint 2: 0.000000, -0.334200, 0.042000
+#  Joint 3: 0.000000, -0.257700, 0.725100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.674600, Y -1.477500
+#   Vertex 1: X -1.674600, Y -1.477500
+#   Vertex 2: X -1.674600, Y -1.477500
+#   Vertex 3: X -1.674600, Y -1.477500
+
+# Bone frame 80
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.950633, 0.310316
+#  Bone 1 forward normal: 0.000000, -0.978067, 0.208291
+#  Bone 2 forward normal: 0.000000, -0.995999, 0.089361
+#  Joint 0: 0.000000, 0.297900, 2.712000
+#  Joint 1: 0.000000, -0.010200, 1.766100
+#  Joint 2: 0.000000, -0.297900, 0.051600
+#  Joint 3: 0.000000, -0.241800, 0.676200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.624200, Y -1.507800
+#   Vertex 1: X -1.624200, Y -1.507800
+#   Vertex 2: X -1.624200, Y -1.507800
+#   Vertex 3: X -1.624200, Y -1.507800
+
+# Bone frame 81
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.946985, 0.321277
+#  Bone 1 forward normal: 0.000000, -0.984335, 0.176309
+#  Bone 2 forward normal: 0.000000, -0.997827, 0.065891
+#  Joint 0: 0.000000, 0.243300, 2.497800
+#  Joint 1: 0.000000, -0.012300, 1.741800
+#  Joint 2: 0.000000, -0.243300, 0.060000
+#  Joint 3: 0.000000, -0.203100, 0.677700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.596000, Y -1.498200
+#   Vertex 1: X -1.596000, Y -1.498200
+#   Vertex 2: X -1.596000, Y -1.498200
+#   Vertex 3: X -1.596000, Y -1.498200
+
+# Bone frame 82
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.958576, 0.284835
+#  Bone 1 forward normal: 0.000000, -0.991319, 0.131476
+#  Bone 2 forward normal: 0.000000, -0.998785, 0.049288
+#  Joint 0: 0.000000, 0.170700, 2.363400
+#  Joint 1: 0.000000, 0.003600, 1.800600
+#  Joint 2: 0.000000, -0.170700, 0.066000
+#  Joint 3: 0.000000, -0.138000, 0.730800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.578900, Y -1.466700
+#   Vertex 1: X -1.578900, Y -1.466700
+#   Vertex 2: X -1.578900, Y -1.466700
+#   Vertex 3: X -1.578900, Y -1.466700
+
+# Bone frame 83
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.981835, 0.189738
+#  Bone 1 forward normal: 0.000000, -0.995359, 0.096228
+#  Bone 2 forward normal: 0.000000, -0.998854, 0.047854
+#  Joint 0: 0.000000, 0.117300, 2.387100
+#  Joint 1: 0.000000, 0.023400, 1.899000
+#  Joint 2: 0.000000, -0.117300, 0.066000
+#  Joint 3: 0.000000, -0.082500, 0.796500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.571700, Y -1.444500
+#   Vertex 1: X -1.571700, Y -1.444500
+#   Vertex 2: X -1.571700, Y -1.444500
+#   Vertex 3: X -1.571700, Y -1.444500
+
+# Bone frame 84
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.995312, 0.096714
+#  Bone 1 forward normal: 0.000000, -0.997361, 0.072605
+#  Bone 2 forward normal: 0.000000, -0.998705, 0.050875
+#  Joint 0: 0.000000, 0.087000, 2.528700
+#  Joint 1: 0.000000, 0.036300, 2.006100
+#  Joint 2: 0.000000, -0.087000, 0.060000
+#  Joint 3: 0.000000, -0.046800, 0.858300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.566900, Y -1.433700
+#   Vertex 1: X -1.566900, Y -1.433700
+#   Vertex 2: X -1.566900, Y -1.433700
+#   Vertex 3: X -1.566900, Y -1.433700
+
+# Bone frame 85
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999061, 0.043337
+#  Bone 1 forward normal: 0.000000, -0.998465, 0.055392
+#  Bone 2 forward normal: 0.000000, -0.998800, 0.048983
+#  Joint 0: 0.000000, 0.066900, 2.727600
+#  Joint 1: 0.000000, 0.040800, 2.112000
+#  Joint 2: 0.000000, -0.066900, 0.053400
+#  Joint 3: 0.000000, -0.024600, 0.916500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.555800, Y -1.435800
+#   Vertex 1: X -1.555800, Y -1.435800
+#   Vertex 2: X -1.555800, Y -1.435800
+#   Vertex 3: X -1.555800, Y -1.435800
+
+# Bone frame 86
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999757, 0.022065
+#  Bone 1 forward normal: 0.000000, -0.999072, 0.043062
+#  Bone 2 forward normal: 0.000000, -0.999143, 0.041384
+#  Joint 0: 0.000000, 0.054300, 2.955900
+#  Joint 1: 0.000000, 0.037800, 2.211900
+#  Joint 2: 0.000000, -0.053400, 0.044400
+#  Joint 3: 0.000000, -0.015600, 0.969300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.538700, Y -1.450200
+#   Vertex 1: X -1.538700, Y -1.450200
+#   Vertex 2: X -1.538700, Y -1.450200
+#   Vertex 3: X -1.538700, Y -1.450200
+
+# Bone frame 87
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999921, 0.012604
+#  Bone 1 forward normal: 0.000000, -0.999454, 0.033052
+#  Bone 2 forward normal: 0.000000, -0.999461, 0.032838
+#  Joint 0: 0.000000, 0.042600, 3.192000
+#  Joint 1: 0.000000, 0.032100, 2.310000
+#  Joint 2: 0.000000, -0.042600, 0.034500
+#  Joint 3: 0.000000, -0.010200, 1.021500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.528200, Y -1.460100
+#   Vertex 1: X -1.528200, Y -1.460100
+#   Vertex 2: X -1.528200, Y -1.460100
+#   Vertex 3: X -1.528200, Y -1.460100
+
+# Bone frame 88
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999966, 0.008301
+#  Bone 1 forward normal: 0.000000, -0.999709, 0.024140
+#  Bone 2 forward normal: 0.000000, -0.999716, 0.023835
+#  Joint 0: 0.000000, 0.033000, 3.434100
+#  Joint 1: 0.000000, 0.024300, 2.406600
+#  Joint 2: 0.000000, -0.032100, 0.024600
+#  Joint 3: 0.000000, -0.007800, 1.071000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.523700, Y -1.465200
+#   Vertex 1: X -1.523700, Y -1.465200
+#   Vertex 2: X -1.523700, Y -1.465200
+#   Vertex 3: X -1.523700, Y -1.465200
+
+# Bone frame 89
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999990, 0.004578
+#  Bone 1 forward normal: 0.000000, -0.999857, 0.016938
+#  Bone 2 forward normal: 0.000000, -0.999885, 0.015137
+#  Joint 0: 0.000000, 0.022500, 3.683400
+#  Joint 1: 0.000000, 0.016500, 2.505000
+#  Joint 2: 0.000000, -0.022500, 0.015000
+#  Joint 3: 0.000000, -0.005100, 1.124100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.520700, Y -1.469700
+#   Vertex 1: X -1.520700, Y -1.469700
+#   Vertex 2: X -1.520700, Y -1.469700
+#   Vertex 3: X -1.520700, Y -1.469700
+
+# Bone frame 90
+#  Action name: walk (02)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999997, 0.002442
+#  Bone 1 forward normal: 0.000000, -0.999963, 0.008606
+#  Bone 2 forward normal: 0.000000, -0.999971, 0.007660
+#  Joint 0: 0.000000, 0.012300, 3.942000
+#  Joint 1: 0.000000, 0.007800, 2.607600
+#  Joint 2: 0.000000, -0.012300, 0.003900
+#  Joint 3: 0.000000, -0.001800, 1.178700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.518000, Y -1.473300
+#   Vertex 1: X -1.518000, Y -1.473300
+#   Vertex 2: X -1.518000, Y -1.473300
+#   Vertex 3: X -1.518000, Y -1.473300
+
+# Bone frame 91
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.990868, 0.134834
+#  Bone 1 forward normal: 0.000000, -0.999969, 0.007874
+#  Bone 2 forward normal: 0.000000, -0.999583, -0.028871
+#  Joint 0: 0.000000, 0.132000, 4.271700
+#  Joint 1: 0.000000, -0.071700, 2.775000
+#  Joint 2: 0.000000, -0.047700, 0.054900
+#  Joint 3: 0.000000, -0.083400, 1.290000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.563600, Y -1.456500
+#   Vertex 1: X -1.563600, Y -1.456500
+#   Vertex 2: X -1.563600, Y -1.456500
+#   Vertex 3: X -1.563600, Y -1.456500
+
+# Bone frame 92
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.863014, 0.505180
+#  Bone 1 forward normal: 0.000000, -0.999109, 0.042208
+#  Bone 2 forward normal: 0.000000, -0.994461, -0.105107
+#  Joint 0: 0.000000, 0.564600, 4.352100
+#  Joint 1: 0.000000, -0.275100, 2.915100
+#  Joint 2: 0.000000, -0.207300, 0.278700
+#  Joint 3: 0.000000, -0.335400, 1.491900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.773900, Y -1.520400
+#   Vertex 1: X -1.773900, Y -1.520400
+#   Vertex 2: X -1.773900, Y -1.520400
+#   Vertex 3: X -1.773900, Y -1.520400
+
+# Bone frame 93
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.668410, 0.743793
+#  Bone 1 forward normal: 0.000000, -0.995780, 0.091771
+#  Bone 2 forward normal: 0.000000, -0.987842, -0.155464
+#  Joint 0: 0.000000, 1.016400, 4.403700
+#  Joint 1: 0.000000, -0.445500, 3.089100
+#  Joint 2: 0.000000, -0.377100, 0.524700
+#  Joint 3: 0.000000, -0.570000, 1.746000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.013300, Y -1.762500
+#   Vertex 1: X -2.013300, Y -1.762500
+#   Vertex 2: X -2.013300, Y -1.762500
+#   Vertex 3: X -2.013300, Y -1.762500
+
+# Bone frame 94
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.462601, 0.886566
+#  Bone 1 forward normal: 0.000000, -0.980581, 0.196116
+#  Bone 2 forward normal: 0.000000, -0.996554, -0.082950
+#  Joint 0: 0.000000, 1.399800, 4.302600
+#  Joint 1: 0.000000, -0.399900, 3.363000
+#  Joint 2: 0.000000, -0.526500, 0.783600
+#  Joint 3: 0.000000, -0.641400, 2.158500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.135400, Y -1.932900
+#   Vertex 1: X -2.135400, Y -1.932900
+#   Vertex 2: X -2.135400, Y -1.932900
+#   Vertex 3: X -2.135400, Y -1.932900
+
+# Bone frame 95
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.280649, 0.959810
+#  Bone 1 forward normal: 0.000000, -0.943575, 0.331158
+#  Bone 2 forward normal: 0.000000, -0.999415, -0.034212
+#  Joint 0: 0.000000, 1.662000, 4.164600
+#  Joint 1: 0.000000, -0.227700, 3.611400
+#  Joint 2: 0.000000, -0.548100, 0.932700
+#  Joint 3: 0.000000, -0.603000, 2.541600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.220000, Y -1.880400
+#   Vertex 1: X -2.220000, Y -1.880400
+#   Vertex 2: X -2.220000, Y -1.880400
+#   Vertex 3: X -2.220000, Y -1.880400
+
+# Bone frame 96
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.207196, 0.978299
+#  Bone 1 forward normal: 0.000000, -0.897777, 0.440450
+#  Bone 2 forward normal: 0.000000, -0.996639, -0.081914
+#  Joint 0: 0.000000, 1.747500, 4.090500
+#  Joint 1: 0.000000, -0.010200, 3.717600
+#  Joint 2: 0.000000, -0.349800, 0.858300
+#  Joint 3: 0.000000, -0.501000, 2.714700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.176500, Y -1.701000
+#   Vertex 1: X -2.176500, Y -1.701000
+#   Vertex 2: X -2.176500, Y -1.701000
+#   Vertex 3: X -2.176500, Y -1.701000
+
+# Bone frame 97
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.230359, 0.973106
+#  Bone 1 forward normal: 0.000000, -0.881022, 0.473075
+#  Bone 2 forward normal: 0.000000, -0.992298, -0.123877
+#  Joint 0: 0.000000, 1.664100, 4.032900
+#  Joint 1: 0.000000, 0.189000, 3.683400
+#  Joint 2: 0.000000, -0.109800, 0.681000
+#  Joint 3: 0.000000, -0.357900, 2.664600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.118600, Y -1.409400
+#   Vertex 1: X -2.118600, Y -1.409400
+#   Vertex 2: X -2.118600, Y -1.409400
+#   Vertex 3: X -2.118600, Y -1.409400
+
+# Bone frame 98
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.357870, 0.933771
+#  Bone 1 forward normal: 0.000000, -0.914211, 0.405238
+#  Bone 2 forward normal: 0.000000, -0.995808, -0.091466
+#  Joint 0: 0.000000, 1.410000, 3.932700
+#  Joint 1: 0.000000, 0.316200, 3.514500
+#  Joint 2: 0.000000, -0.011700, 0.524700
+#  Joint 3: 0.000000, -0.183000, 2.387100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.967100, Y -1.227600
+#   Vertex 1: X -1.967100, Y -1.227600
+#   Vertex 2: X -1.967100, Y -1.227600
+#   Vertex 3: X -1.967100, Y -1.227600
+
+# Bone frame 99
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.615632, 0.788034
+#  Bone 1 forward normal: 0.000000, -0.951969, 0.306194
+#  Bone 2 forward normal: 0.000000, -0.999765, -0.021699
+#  Joint 0: 0.000000, 1.070400, 3.817500
+#  Joint 1: 0.000000, 0.366300, 3.267300
+#  Joint 2: 0.000000, 0.000000, 0.397200
+#  Joint 3: 0.000000, -0.034500, 2.018400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.830600, Y -1.117800
+#   Vertex 1: X -1.830600, Y -1.117800
+#   Vertex 2: X -1.830600, Y -1.117800
+#   Vertex 3: X -1.830600, Y -1.117800
+
+# Bone frame 100
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.885509, 0.464622
+#  Bone 1 forward normal: 0.000000, -0.973437, 0.228954
+#  Bone 2 forward normal: 0.000000, -0.999770, 0.021424
+#  Joint 0: 0.000000, 0.718200, 3.719700
+#  Joint 1: 0.000000, 0.338100, 2.994300
+#  Joint 2: 0.000000, 0.000000, 0.291300
+#  Joint 3: 0.000000, 0.029100, 1.683600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.689000, Y -1.158000
+#   Vertex 1: X -1.689000, Y -1.158000
+#   Vertex 2: X -1.689000, Y -1.158000
+#   Vertex 3: X -1.689000, Y -1.158000
+
+# Bone frame 101
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.995450, 0.095281
+#  Bone 1 forward normal: 0.000000, -0.984946, 0.172861
+#  Bone 2 forward normal: 0.000000, -0.999285, 0.037813
+#  Joint 0: 0.000000, 0.366000, 3.652500
+#  Joint 1: 0.000000, 0.277800, 2.734800
+#  Joint 2: 0.000000, 0.000000, 0.215400
+#  Joint 3: 0.000000, 0.045000, 1.405500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.594500, Y -1.264200
+#   Vertex 1: X -1.594500, Y -1.264200
+#   Vertex 2: X -1.594500, Y -1.264200
+#   Vertex 3: X -1.594500, Y -1.264200
+
+# Bone frame 102
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.981681, -0.190531
+#  Bone 1 forward normal: 0.000000, -0.990897, 0.134620
+#  Bone 2 forward normal: 0.000000, -0.999036, 0.043886
+#  Joint 0: 0.000000, 0.009900, 3.627000
+#  Joint 1: 0.000000, 0.224100, 2.521500
+#  Joint 2: 0.000000, 0.000000, 0.183000
+#  Joint 3: 0.000000, 0.044400, 1.193100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.535400, Y -1.410000
+#   Vertex 1: X -1.535400, Y -1.410000
+#   Vertex 2: X -1.535400, Y -1.410000
+#   Vertex 3: X -1.535400, Y -1.410000
+
+# Bone frame 103
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.930776, -0.365590
+#  Bone 1 forward normal: 0.000000, -0.995800, 0.091557
+#  Bone 2 forward normal: 0.000000, -0.999531, 0.030611
+#  Joint 0: 0.000000, -0.350700, 3.630900
+#  Joint 1: 0.000000, 0.147000, 2.359500
+#  Joint 2: 0.000000, 0.000000, 0.174900
+#  Joint 3: 0.000000, 0.025800, 1.039500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.512000, Y -1.619100
+#   Vertex 1: X -1.512000, Y -1.619100
+#   Vertex 2: X -1.512000, Y -1.619100
+#   Vertex 3: X -1.512000, Y -1.619100
+
+# Bone frame 104
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.890983, -0.454037
+#  Bone 1 forward normal: 0.000000, -0.999720, 0.023683
+#  Bone 2 forward normal: 0.000000, -0.999721, -0.023622
+#  Joint 0: 0.000000, -0.694500, 3.652500
+#  Joint 1: 0.000000, 0.012300, 2.265600
+#  Joint 2: 0.000000, 0.000000, 0.173100
+#  Joint 3: 0.000000, -0.017700, 0.954900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.454100, Y -1.923600
+#   Vertex 1: X -1.454100, Y -1.923600
+#   Vertex 2: X -1.454100, Y -1.923600
+#   Vertex 3: X -1.454100, Y -1.923600
+
+# Bone frame 105
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.875266, -0.483641
+#  Bone 1 forward normal: 0.000000, -0.998970, -0.045381
+#  Bone 2 forward normal: 0.000000, -0.994785, -0.101993
+#  Joint 0: 0.000000, -0.931200, 3.677400
+#  Joint 1: 0.000000, -0.138900, 2.242800
+#  Joint 2: 0.000000, 0.000000, 0.172200
+#  Joint 3: 0.000000, -0.080400, 0.961800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.489800, Y -2.100900
+#   Vertex 1: X -1.489800, Y -2.100900
+#   Vertex 2: X -1.489800, Y -2.100900
+#   Vertex 3: X -1.489800, Y -2.100900
+
+# Bone frame 106
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.892133, -0.451773
+#  Bone 1 forward normal: 0.000000, -0.996157, -0.087588
+#  Bone 2 forward normal: 0.000000, -0.987135, -0.159889
+#  Joint 0: 0.000000, -0.956700, 3.690600
+#  Joint 1: 0.000000, -0.254100, 2.301600
+#  Joint 2: 0.000000, 0.000000, 0.172200
+#  Joint 3: 0.000000, -0.147000, 1.083300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.473000, Y -2.144100
+#   Vertex 1: X -1.473000, Y -2.144100
+#   Vertex 2: X -1.473000, Y -2.144100
+#   Vertex 3: X -1.473000, Y -2.144100
+
+# Bone frame 107
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.930128, -0.367235
+#  Bone 1 forward normal: 0.000000, -0.993334, -0.115270
+#  Bone 2 forward normal: 0.000000, -0.983160, -0.182746
+#  Joint 0: 0.000000, -0.842100, 3.699000
+#  Joint 1: 0.000000, -0.335400, 2.412900
+#  Joint 2: 0.000000, 0.000000, 0.171300
+#  Joint 3: 0.000000, -0.200400, 1.252500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.428900, Y -2.098500
+#   Vertex 1: X -1.428900, Y -2.098500
+#   Vertex 2: X -1.428900, Y -2.098500
+#   Vertex 3: X -1.428900, Y -2.098500
+
+# Bone frame 108
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.971411, -0.237405
+#  Bone 1 forward normal: 0.000000, -0.990363, -0.138494
+#  Bone 2 forward normal: 0.000000, -0.984077, -0.177741
+#  Joint 0: 0.000000, -0.668700, 3.716400
+#  Joint 1: 0.000000, -0.381600, 2.542800
+#  Joint 2: 0.000000, 0.000000, 0.168600
+#  Joint 3: 0.000000, -0.220500, 1.390500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.442100, Y -1.975200
+#   Vertex 1: X -1.442100, Y -1.975200
+#   Vertex 2: X -1.442100, Y -1.975200
+#   Vertex 3: X -1.442100, Y -1.975200
+
+# Bone frame 109
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.995482, -0.094946
+#  Bone 1 forward normal: 0.000000, -0.989553, -0.144172
+#  Bone 2 forward normal: 0.000000, -0.987444, -0.157967
+#  Joint 0: 0.000000, -0.487500, 3.759900
+#  Joint 1: 0.000000, -0.381900, 2.651100
+#  Joint 2: 0.000000, 0.000000, 0.156300
+#  Joint 3: 0.000000, -0.209100, 1.467300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.462200, Y -1.848000
+#   Vertex 1: X -1.462200, Y -1.848000
+#   Vertex 2: X -1.462200, Y -1.848000
+#   Vertex 3: X -1.462200, Y -1.848000
+
+# Bone frame 110
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999760, -0.021912
+#  Bone 1 forward normal: 0.000000, -0.992928, -0.118718
+#  Bone 2 forward normal: 0.000000, -0.991826, -0.127599
+#  Joint 0: 0.000000, -0.344400, 3.847200
+#  Joint 1: 0.000000, -0.319800, 2.701800
+#  Joint 2: 0.000000, 0.000000, 0.126600
+#  Joint 3: 0.000000, -0.171300, 1.459500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.457100, Y -1.766100
+#   Vertex 1: X -1.457100, Y -1.766100
+#   Vertex 2: X -1.457100, Y -1.766100
+#   Vertex 3: X -1.457100, Y -1.766100
+
+# Bone frame 111
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999993, -0.003662
+#  Bone 1 forward normal: 0.000000, -0.996827, -0.079592
+#  Bone 2 forward normal: 0.000000, -0.995878, -0.090704
+#  Joint 0: 0.000000, -0.228600, 3.960600
+#  Joint 1: 0.000000, -0.224100, 2.718300
+#  Joint 2: 0.000000, 0.000000, 0.087000
+#  Joint 3: 0.000000, -0.119100, 1.402800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.457400, Y -1.686600
+#   Vertex 1: X -1.457400, Y -1.686600
+#   Vertex 2: X -1.457400, Y -1.686600
+#   Vertex 3: X -1.457400, Y -1.686600
+
+# Bone frame 112
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000000
+#  Bone 1 forward normal: 0.000000, -0.998966, -0.045473
+#  Bone 2 forward normal: 0.000000, -0.998455, -0.055575
+#  Joint 0: 0.000000, -0.134700, 4.069800
+#  Joint 1: 0.000000, -0.134700, 2.727300
+#  Joint 2: 0.000000, 0.000000, 0.049200
+#  Joint 3: 0.000000, -0.071700, 1.340100
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.464600, Y -1.614000
+#   Vertex 1: X -1.464600, Y -1.614000
+#   Vertex 2: X -1.464600, Y -1.614000
+#   Vertex 3: X -1.464600, Y -1.614000
+
+# Bone frame 113
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000336
+#  Bone 1 forward normal: 0.000000, -0.999764, -0.021729
+#  Bone 2 forward normal: 0.000000, -0.999607, -0.028047
+#  Joint 0: 0.000000, -0.066000, 4.154400
+#  Joint 1: 0.000000, -0.066900, 2.733600
+#  Joint 2: 0.000000, 0.000000, 0.019800
+#  Joint 3: 0.000000, -0.035400, 1.290000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.509000, Y -1.526400
+#   Vertex 1: X -1.509000, Y -1.526400
+#   Vertex 2: X -1.509000, Y -1.526400
+#   Vertex 3: X -1.509000, Y -1.526400
+
+# Bone frame 114
+#  Action name: stun_begin (03)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000183
+#  Bone 1 forward normal: 0.000000, -0.999992, -0.004029
+#  Bone 2 forward normal: 0.000000, -0.999984, -0.005738
+#  Joint 0: 0.000000, -0.012900, 4.222200
+#  Joint 1: 0.000000, -0.012900, 2.737800
+#  Joint 2: 0.000000, 0.000000, -0.001800
+#  Joint 3: 0.000000, -0.007200, 1.249800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.514700, Y -1.486800
+#   Vertex 1: X -1.514700, Y -1.486800
+#   Vertex 2: X -1.514700, Y -1.486800
+#   Vertex 3: X -1.514700, Y -1.486800
+
+# Bone frame 115
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000183
+#  Bone 1 forward normal: 0.000000, -0.999992, -0.004029
+#  Bone 2 forward normal: 0.000000, -0.999984, -0.005738
+#  Joint 0: 0.000000, -0.005100, 4.222200
+#  Joint 1: 0.000000, -0.005100, 2.737800
+#  Joint 2: 0.000000, 0.005100, -0.001800
+#  Joint 3: 0.000000, 0.000000, 1.249800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
+
+# Bone frame 116
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.997122, -0.075810
+#  Bone 1 forward normal: 0.000000, -0.999789, -0.020539
+#  Bone 2 forward normal: 0.000000, -1.000000, -0.000336
+#  Joint 0: 0.000000, -0.077700, 4.399500
+#  Joint 1: 0.000000, 0.043500, 2.798700
+#  Joint 2: 0.000000, 0.074700, 0.012900
+#  Joint 3: 0.000000, 0.073500, 1.309500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515900, Y -1.462500
+#   Vertex 1: X -1.515900, Y -1.462500
+#   Vertex 2: X -1.515900, Y -1.462500
+#   Vertex 3: X -1.515900, Y -1.462500
+
+# Bone frame 117
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.988939, -0.148323
+#  Bone 1 forward normal: 0.000000, -0.999232, -0.039187
+#  Bone 2 forward normal: 0.000000, -0.999986, 0.005341
+#  Joint 0: 0.000000, -0.159000, 4.601400
+#  Joint 1: 0.000000, 0.100200, 2.868300
+#  Joint 2: 0.000000, 0.152100, 0.033900
+#  Joint 3: 0.000000, 0.159000, 1.377600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.442100, Y -1.527600
+#   Vertex 1: X -1.442100, Y -1.527600
+#   Vertex 2: X -1.442100, Y -1.527600
+#   Vertex 3: X -1.442100, Y -1.527600
+
+# Bone frame 118
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.957600, -0.288101
+#  Bone 1 forward normal: 0.000000, -0.996428, -0.084447
+#  Bone 2 forward normal: 0.000000, -0.999509, 0.031343
+#  Joint 0: 0.000000, -0.341400, 4.883400
+#  Joint 1: 0.000000, 0.214500, 3.034200
+#  Joint 2: 0.000000, 0.294900, 0.061500
+#  Joint 3: 0.000000, 0.341400, 1.537800
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.437900, Y -1.596000
+#   Vertex 1: X -1.437900, Y -1.596000
+#   Vertex 2: X -1.437900, Y -1.596000
+#   Vertex 3: X -1.437900, Y -1.596000
+
+# Bone frame 119
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.911719, -0.410814
+#  Bone 1 forward normal: 0.000000, -0.990881, -0.134740
+#  Bone 2 forward normal: 0.000000, -0.998453, 0.055605
+#  Joint 0: 0.000000, -0.548100, 5.201700
+#  Joint 1: 0.000000, 0.343500, 3.222000
+#  Joint 2: 0.000000, 0.457200, 0.093600
+#  Joint 3: 0.000000, 0.548100, 1.720200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.535100, Y -1.659900
+#   Vertex 1: X -1.535100, Y -1.659900
+#   Vertex 2: X -1.535100, Y -1.659900
+#   Vertex 3: X -1.535100, Y -1.659900
+
+# Bone frame 120
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.831942, -0.554862
+#  Bone 1 forward normal: 0.000000, -0.980108, -0.198463
+#  Bone 2 forward normal: 0.000000, -0.997180, 0.075046
+#  Joint 0: 0.000000, -0.772200, 5.285400
+#  Joint 1: 0.000000, 0.468300, 3.423900
+#  Joint 2: 0.000000, 0.637800, 0.140700
+#  Joint 3: 0.000000, 0.772200, 1.926300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.661400, Y -1.755000
+#   Vertex 1: X -1.661400, Y -1.755000
+#   Vertex 2: X -1.661400, Y -1.755000
+#   Vertex 3: X -1.661400, Y -1.755000
+
+# Bone frame 121
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.725701, -0.688010
+#  Bone 1 forward normal: 0.000000, -0.963355, -0.268229
+#  Bone 2 forward normal: 0.000000, -0.995647, 0.093205
+#  Joint 0: 0.000000, -1.025700, 5.379000
+#  Joint 1: 0.000000, 0.610200, 3.651600
+#  Joint 2: 0.000000, 0.842100, 0.195000
+#  Joint 3: 0.000000, 1.025700, 2.159400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.818600, Y -1.882500
+#   Vertex 1: X -1.818600, Y -1.882500
+#   Vertex 2: X -1.818600, Y -1.882500
+#   Vertex 3: X -1.818600, Y -1.882500
+
+# Bone frame 122
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.604527, -0.796585
+#  Bone 1 forward normal: 0.000000, -0.937796, -0.347187
+#  Bone 2 forward normal: 0.000000, -0.997938, 0.064181
+#  Joint 0: 0.000000, -1.222500, 5.253300
+#  Joint 1: 0.000000, 0.688500, 3.803100
+#  Joint 2: 0.000000, 1.093200, 0.358200
+#  Joint 3: 0.000000, 1.222500, 2.360400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.946700, Y -1.998300
+#   Vertex 1: X -1.946700, Y -1.998300
+#   Vertex 2: X -1.946700, Y -1.998300
+#   Vertex 3: X -1.946700, Y -1.998300
+
+# Bone frame 123
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.455593, -0.890188
+#  Bone 1 forward normal: 0.000000, -0.900774, -0.434288
+#  Bone 2 forward normal: 0.000000, -0.999476, 0.032381
+#  Joint 0: 0.000000, -1.445100, 5.111100
+#  Joint 1: 0.000000, 0.776400, 3.974100
+#  Joint 2: 0.000000, 1.378500, 0.543000
+#  Joint 3: 0.000000, 1.445100, 2.588400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.101800, Y -2.155200
+#   Vertex 1: X -2.101800, Y -2.155200
+#   Vertex 2: X -2.101800, Y -2.155200
+#   Vertex 3: X -2.101800, Y -2.155200
+
+# Bone frame 124
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.323077, -0.946373
+#  Bone 1 forward normal: 0.000000, -0.845601, -0.533815
+#  Bone 2 forward normal: 0.000000, -0.998810, -0.048769
+#  Joint 0: 0.000000, -1.621800, 4.838400
+#  Joint 1: 0.000000, 0.680100, 4.053300
+#  Joint 2: 0.000000, 1.586700, 0.801900
+#  Joint 3: 0.000000, 1.490400, 2.769600
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.199300, Y -2.310900
+#   Vertex 1: X -2.199300, Y -2.310900
+#   Vertex 2: X -2.199300, Y -2.310900
+#   Vertex 3: X -2.199300, Y -2.310900
+
+# Bone frame 125
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.160042, -0.987110
+#  Bone 1 forward normal: 0.000000, -0.768689, -0.639623
+#  Bone 2 forward normal: 0.000000, -0.989081, -0.147375
+#  Joint 0: 0.000000, -1.822200, 4.529400
+#  Joint 1: 0.000000, 0.570300, 4.142100
+#  Joint 2: 0.000000, 1.822200, 1.094700
+#  Joint 3: 0.000000, 1.542000, 2.975700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -2.294400, Y -2.534400
+#   Vertex 1: X -2.294400, Y -2.534400
+#   Vertex 2: X -2.294400, Y -2.534400
+#   Vertex 3: X -2.294400, Y -2.534400
+
+# Bone frame 126
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.012574, -0.999921
+#  Bone 1 forward normal: 0.000000, -0.607508, -0.794314
+#  Bone 2 forward normal: 0.000000, -0.945935, -0.324356
+#  Joint 0: 0.000000, -1.898400, 4.003500
+#  Joint 1: 0.000000, 0.174000, 3.977100
+#  Joint 2: 0.000000, 1.898400, 1.418700
+#  Joint 3: 0.000000, 1.321800, 3.099300
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.890300, Y -2.968500
+#   Vertex 1: X -1.890300, Y -2.968500
+#   Vertex 2: X -1.890300, Y -2.968500
+#   Vertex 3: X -1.890300, Y -2.968500
+
+# Bone frame 127
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.219373, -0.975641
+#  Bone 1 forward normal: 0.000000, -0.378037, -0.925790
+#  Bone 2 forward normal: 0.000000, -0.847260, -0.531178
+#  Joint 0: 0.000000, -1.984500, 3.406500
+#  Joint 1: 0.000000, -0.275100, 3.790800
+#  Joint 2: 0.000000, 1.984500, 1.785000
+#  Joint 3: 0.000000, 1.072500, 3.239400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.773300, Y -3.281700
+#   Vertex 1: X -1.773300, Y -3.281700
+#   Vertex 2: X -1.773300, Y -3.281700
+#   Vertex 3: X -1.773300, Y -3.281700
+
+# Bone frame 128
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.336044, -0.941846
+#  Bone 1 forward normal: 0.000000, -0.232066, -0.972700
+#  Bone 2 forward normal: 0.000000, -0.729463, -0.684020
+#  Joint 0: 0.000000, -1.980300, 3.015600
+#  Joint 1: 0.000000, -0.506400, 3.541200
+#  Joint 2: 0.000000, 1.980300, 1.984500
+#  Joint 3: 0.000000, 0.816600, 3.225000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.512600, Y -3.457800
+#   Vertex 1: X -1.512600, Y -3.457800
+#   Vertex 2: X -1.512600, Y -3.457800
+#   Vertex 3: X -1.512600, Y -3.457800
+
+# Bone frame 129
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.494416, -0.869226
+#  Bone 1 forward normal: 0.000000, -0.038546, -0.999257
+#  Bone 2 forward normal: 0.000000, -0.567229, -0.823560
+#  Joint 0: 0.000000, -1.974600, 2.572800
+#  Joint 1: 0.000000, -0.769200, 3.258000
+#  Joint 2: 0.000000, 1.975200, 2.211900
+#  Joint 3: 0.000000, 0.528000, 3.208500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.476300, Y -3.574200
+#   Vertex 1: X -1.476300, Y -3.574200
+#   Vertex 2: X -1.476300, Y -3.574200
+#   Vertex 3: X -1.476300, Y -3.574200
+
+# Bone frame 130
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.591278, -0.806468
+#  Bone 1 forward normal: 0.000000, 0.080355, -0.996766
+#  Bone 2 forward normal: 0.000000, -0.403552, -0.914957
+#  Joint 0: 0.000000, -1.936500, 2.206800
+#  Joint 1: 0.000000, -0.849300, 3.003600
+#  Joint 2: 0.000000, 1.936500, 2.370600
+#  Joint 3: 0.000000, 0.291300, 3.096000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.420800, Y -3.546600
+#   Vertex 1: X -1.420800, Y -3.546600
+#   Vertex 2: X -1.420800, Y -3.546600
+#   Vertex 3: X -1.420800, Y -3.546600
+
+# Bone frame 131
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.709149, -0.705059
+#  Bone 1 forward normal: 0.000000, 0.280380, -0.959889
+#  Bone 2 forward normal: 0.000000, -0.194619, -0.980879
+#  Joint 0: 0.000000, -1.887000, 1.736700
+#  Joint 1: 0.000000, -0.951300, 2.676900
+#  Joint 2: 0.000000, 1.887000, 2.574900
+#  Joint 3: 0.000000, -0.011700, 2.952000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.546800, Y -3.448500
+#   Vertex 1: X -1.546800, Y -3.448500
+#   Vertex 2: X -1.546800, Y -3.448500
+#   Vertex 3: X -1.546800, Y -3.448500
+
+# Bone frame 132
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.756291, -0.654235
+#  Bone 1 forward normal: 0.000000, 0.431421, -0.902151
+#  Bone 2 forward normal: 0.000000, -0.045442, -0.998967
+#  Joint 0: 0.000000, -1.763400, 1.454400
+#  Joint 1: 0.000000, -0.956400, 2.387100
+#  Joint 2: 0.000000, 1.763400, 2.676000
+#  Joint 3: 0.000000, -0.168000, 2.764200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.471200, Y -3.345600
+#   Vertex 1: X -1.471200, Y -3.345600
+#   Vertex 2: X -1.471200, Y -3.345600
+#   Vertex 3: X -1.471200, Y -3.345600
+
+# Bone frame 133
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.820775, -0.571252
+#  Bone 1 forward normal: 0.000000, 0.651432, -0.758707
+#  Bone 2 forward normal: 0.000000, 0.142156, -0.989844
+#  Joint 0: 0.000000, -1.603800, 1.091100
+#  Joint 1: 0.000000, -0.960300, 2.014200
+#  Joint 2: 0.000000, 1.603800, 2.806500
+#  Joint 3: 0.000000, -0.369000, 2.522400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.475100, Y -3.205500
+#   Vertex 1: X -1.475100, Y -3.205500
+#   Vertex 2: X -1.475100, Y -3.205500
+#   Vertex 3: X -1.475100, Y -3.205500
+
+# Bone frame 134
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.866570, -0.499055
+#  Bone 1 forward normal: 0.000000, 0.640971, -0.767565
+#  Bone 2 forward normal: 0.000000, 0.279583, -0.960122
+#  Joint 0: 0.000000, -1.521300, 0.874800
+#  Joint 1: 0.000000, -1.027200, 1.733100
+#  Joint 2: 0.000000, 1.521300, 2.806500
+#  Joint 3: 0.000000, -0.419100, 2.241000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.442700, Y -3.179700
+#   Vertex 1: X -1.442700, Y -3.179700
+#   Vertex 2: X -1.442700, Y -3.179700
+#   Vertex 3: X -1.442700, Y -3.179700
+
+# Bone frame 135
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.931266, -0.364340
+#  Bone 1 forward normal: 0.000000, 0.627846, -0.778337
+#  Bone 2 forward normal: 0.000000, 0.439016, -0.898479
+#  Joint 0: 0.000000, -1.414800, 0.597600
+#  Joint 1: 0.000000, -1.112700, 1.371000
+#  Joint 2: 0.000000, 1.414800, 2.806500
+#  Joint 3: 0.000000, -0.482700, 1.878900
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.404000, Y -3.150000
+#   Vertex 1: X -1.404000, Y -3.150000
+#   Vertex 2: X -1.404000, Y -3.150000
+#   Vertex 3: X -1.404000, Y -3.150000
+
+# Bone frame 136
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.950932, -0.309399
+#  Bone 1 forward normal: 0.000000, 0.734656, -0.678440
+#  Bone 2 forward normal: 0.000000, 0.608923, -0.793229
+#  Joint 0: 0.000000, -1.099800, 0.399900
+#  Joint 1: 0.000000, -0.896700, 1.023000
+#  Joint 2: 0.000000, 1.099800, 2.723400
+#  Joint 3: 0.000000, -0.366300, 1.597500
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.294500, Y -2.814900
+#   Vertex 1: X -1.294500, Y -2.814900
+#   Vertex 2: X -1.294500, Y -2.814900
+#   Vertex 3: X -1.294500, Y -2.814900
+
+# Bone frame 137
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, 0.985223, -0.171274
+#  Bone 1 forward normal: 0.000000, 0.853596, -0.520935
+#  Bone 2 forward normal: 0.000000, 0.834269, -0.551357
+#  Joint 0: 0.000000, -0.694500, 0.144300
+#  Joint 1: 0.000000, -0.619800, 0.575700
+#  Joint 2: 0.000000, 0.694500, 2.617200
+#  Joint 3: 0.000000, -0.217200, 1.235400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.331700, Y -2.372700
+#   Vertex 1: X -1.331700, Y -2.372700
+#   Vertex 2: X -1.331700, Y -2.372700
+#   Vertex 3: X -1.331700, Y -2.372700
+
+# Bone frame 138
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.996340, -0.085483
+#  Bone 1 forward normal: 0.000000, 0.975532, -0.219857
+#  Bone 2 forward normal: 0.000000, 0.916402, -0.400260
+#  Joint 0: 0.000000, -0.415500, 0.783600
+#  Joint 1: 0.000000, -0.378900, 0.357900
+#  Joint 2: 0.000000, 0.450000, 2.681100
+#  Joint 3: 0.000000, -0.181200, 1.235400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.284900, Y -1.836000
+#   Vertex 1: X -1.284900, Y -1.836000
+#   Vertex 2: X -1.284900, Y -1.836000
+#   Vertex 3: X -1.284900, Y -1.836000
+
+# Bone frame 139
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999965, 0.008362
+#  Bone 1 forward normal: 0.000000, 0.998396, 0.056613
+#  Bone 2 forward normal: 0.000000, 0.984818, -0.173592
+#  Joint 0: 0.000000, -0.055800, 1.607400
+#  Joint 1: 0.000000, -0.069000, 0.077700
+#  Joint 2: 0.000000, 0.133800, 2.763300
+#  Joint 3: 0.000000, -0.133800, 1.235400
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.375800, Y -1.577400
+#   Vertex 1: X -1.375800, Y -1.577400
+#   Vertex 2: X -1.375800, Y -1.577400
+#   Vertex 3: X -1.375800, Y -1.577400
+
+# Bone frame 140
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999538, -0.030397
+#  Bone 1 forward normal: 0.000000, 0.997120, 0.075840
+#  Bone 2 forward normal: 0.000000, 0.996207, -0.087010
+#  Joint 0: 0.000000, -0.060000, 1.760400
+#  Joint 1: 0.000000, -0.007800, 0.077700
+#  Joint 2: 0.000000, 0.066000, 2.558400
+#  Joint 3: 0.000000, -0.074700, 0.940200
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.362900, Y -1.557900
+#   Vertex 1: X -1.362900, Y -1.557900
+#   Vertex 2: X -1.362900, Y -1.557900
+#   Vertex 3: X -1.362900, Y -1.557900
+
+# Bone frame 141
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.997490, -0.070805
+#  Bone 1 forward normal: 0.000000, 0.990934, 0.134346
+#  Bone 2 forward normal: 0.000000, 0.999910, 0.013428
+#  Joint 0: 0.000000, -0.066000, 1.958700
+#  Joint 1: 0.000000, 0.066000, 0.077700
+#  Joint 2: 0.000000, -0.021300, 2.294400
+#  Joint 3: 0.000000, 0.000900, 0.561000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.382700, Y -1.506300
+#   Vertex 1: X -1.382700, Y -1.506300
+#   Vertex 2: X -1.382700, Y -1.506300
+#   Vertex 3: X -1.382700, Y -1.506300
+
+# Bone frame 142
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -0.999875, -0.015840
+#  Bone 1 forward normal: 0.000000, -0.999998, -0.001892
+#  Bone 2 forward normal: 0.000000, -0.999988, -0.004975
+#  Joint 0: 0.000000, -0.009900, 2.585400
+#  Joint 1: 0.000000, -0.001800, 2.089500
+#  Joint 2: 0.000000, 0.003900, 0.132000
+#  Joint 3: 0.000000, 0.000000, 1.196700
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515300, Y -1.480500
+#   Vertex 1: X -1.515300, Y -1.480500
+#   Vertex 2: X -1.515300, Y -1.480500
+#   Vertex 3: X -1.515300, Y -1.480500
+
+# Bone frame 143
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000610
+#  Bone 1 forward normal: 0.000000, -0.999984, -0.005738
+#  Bone 2 forward normal: 0.000000, -0.999983, -0.005768
+#  Joint 0: 0.000000, -0.005100, 2.892000
+#  Joint 1: 0.000000, -0.005100, 2.299500
+#  Joint 2: 0.000000, 0.005100, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.239000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
+
+# Bone frame 144
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000519
+#  Bone 1 forward normal: 0.000000, -0.999987, -0.005188
+#  Bone 2 forward normal: 0.000000, -0.999983, -0.005768
+#  Joint 0: 0.000000, -0.005100, 3.125100
+#  Joint 1: 0.000000, -0.005100, 2.408700
+#  Joint 2: 0.000000, 0.005100, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.239000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
+
+# Bone frame 145
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000427
+#  Bone 1 forward normal: 0.000000, -0.999989, -0.004700
+#  Bone 2 forward normal: 0.000000, -0.999983, -0.005768
+#  Joint 0: 0.000000, -0.005100, 3.389700
+#  Joint 1: 0.000000, -0.005100, 2.533800
+#  Joint 2: 0.000000, 0.005100, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.239000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
+
+# Bone frame 146
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000305
+#  Bone 1 forward normal: 0.000000, -0.999990, -0.004364
+#  Bone 2 forward normal: 0.000000, -0.999983, -0.005768
+#  Joint 0: 0.000000, -0.005100, 3.810300
+#  Joint 1: 0.000000, -0.005100, 2.635500
+#  Joint 2: 0.000000, 0.005100, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.239000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
+
+# Bone frame 147
+#  Action name: knock_out_begin (06)
+#  Action modifier flags: 00
+#  XY movement offset: 0.000000, 0.000000
+#  Bone 0 forward normal: 0.000000, -1.000000, 0.000244
+#  Bone 1 forward normal: 0.000000, -0.999992, -0.004059
+#  Bone 2 forward normal: 0.000000, -0.999983, -0.005768
+#  Joint 0: 0.000000, -0.005100, 4.238400
+#  Joint 1: 0.000000, -0.005100, 2.738700
+#  Joint 2: 0.000000, 0.005100, -0.007800
+#  Joint 3: 0.000000, 0.000000, 1.239000
+#  Shadow texture 0
+#   Alpha: 176
+#   Vertex 0: X -1.515000, Y -1.479000
+#   Vertex 1: X -1.515000, Y -1.479000
+#   Vertex 2: X -1.515000, Y -1.479000
+#   Vertex 3: X -1.515000, Y -1.479000
