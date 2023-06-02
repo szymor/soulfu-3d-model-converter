@@ -13,6 +13,8 @@ Joint sizes in a base model during decoding are multiplied by 0.015f.
 
 External bone frame flag is 16384.
 
+Bone IDs are used to "find the bone numbers for the character's named bones", according to a comment at item_find_random_xyz() in item.c.
+
 DDD Format
   Header
     Scaling (unsigned short)
@@ -60,6 +62,6 @@ DDD Format
       Joint coordinates (3 signed shorts)
     For each shadow texture (4 of 'em)
       alpha (unsigned char)
-	  if alpha > 0
+      if alpha > 0
         For each vertex (4 of 'em)
           Coordinates (2 unsigned shorts)

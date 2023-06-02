@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 #define MAX_DDD_TEXTURE				(4)
 #define MAX_DDD_SHADOW_TEXTURE		(4)
@@ -105,6 +106,7 @@ unsigned char get_texture_alpha(unsigned char *texture);
 unsigned short get_triangle_num(unsigned char *texture);
 unsigned char *get_triangles(unsigned char *texture);
 
+unsigned char *get_first_bone_frame(unsigned char *ddd);
 unsigned char *get_next_bone_frame(unsigned char *ddd, unsigned char *curr_bone_frame);
 
 unsigned char get_action_name(unsigned char *bone_frame);
@@ -159,21 +161,6 @@ int main(int argc, char *argv[])
 		base_model = get_next_base_model(base_model);
 	}
 
-	// print some data about bone frames
-	if (!bff)
-	{
-		unsigned char *bone_frame = base_model;
-		for (int i = 0; i < bone_frame_num; ++i)
-		{
-			printf("Bone frame %d\n", i);
-			unsigned char action_id = get_action_name(bone_frame);
-			printf("  Action name: %s (%02x)\n", action_strings[action_id], action_id);
-			printf("  Action modifier flags: %02x\n", get_action_modifier_flags(bone_frame));
-			printf("  Base model id: %d\n", get_base_model_id(bone_frame));
-			bone_frame = get_next_bone_frame(ddd, bone_frame);
-		}
-	}
-
 	// convert to OBJ
 	char filename[16];
 	base_model = get_first_base_model(ddd);
@@ -183,13 +170,13 @@ int main(int argc, char *argv[])
 		FILE *out = fopen(filename, "w");
 
 		fprintf(out, "# OBJ file generated from SoulFu DDD file %s\n", argv[1]);
-		fprintf(out, "# Scaling: %.6f\n", scale);
-		fprintf(out, "# Flags: %04x\n", header_flags);
+		fprintf(out, "#  Scaling: %.6f\n", scale);
+		fprintf(out, "#  Flags: %04x\n", header_flags);
 		if (bff)
-			fprintf(out, "# Bone frame filename: %c%c%c%c%c%c%c%c\n",
+			fprintf(out, "#  Bone frame filename: %c%c%c%c%c%c%c%c\n",
 				bff[0], bff[1], bff[2], bff[3], bff[4], bff[5], bff[6], bff[7]);
 
-		fprintf(out, "# Number of vertices: %d\n", get_vertex_num(base_model));
+		fprintf(out, "#  Number of vertices: %d\n", get_vertex_num(base_model));
 
 		fprintf(out, "mtllib materials.mtl\n");
 
@@ -212,7 +199,7 @@ int main(int argc, char *argv[])
 			// get rid of anchor flag, just like in render_bone_frame in render.c
 			// done regardless anchor flag state
 			weight <<= 1;
-			fprintf(out, "# bone weighting %.6f, anchor flag %s\n", weight / 255.0f, anchor ? "set" : "reset");
+			fprintf(out, "# bone weighting %.6f, anchor %d\n", weight / 255.0f, anchor ? 1 : 0);
 
 			vtable += 9;
 		}
@@ -232,17 +219,17 @@ int main(int argc, char *argv[])
 
 		// faces
 		unsigned char *texture = get_first_texture(base_model);
-		for (int j = 0; j < 4; ++j)
+		for (int j = 0; j < MAX_DDD_TEXTURE; ++j)
 		{
 			int triangles = get_triangle_num(texture);
 			unsigned char *ttable = get_triangles(texture);
 			if (triangles > 0)
 			{
 				fprintf(out, "# Texture %d\n", j);
-				fprintf(out, "# Rendering mode: %02x\n", get_rendering_mode(texture));
-				fprintf(out, "# Flags: %s\n", get_texture_flag_string(get_texture_flags(texture)));
-				fprintf(out, "# Alpha: %d\n", get_texture_alpha(texture));
-				fprintf(out, "# Number of triangles: %d\n", triangles);
+				fprintf(out, "#  Rendering mode: %02x\n", get_rendering_mode(texture));
+				fprintf(out, "#  Flags: %s\n", get_texture_flag_string(get_texture_flags(texture)));
+				fprintf(out, "#  Alpha: %d\n", get_texture_alpha(texture));
+				fprintf(out, "#  Number of triangles: %d\n", triangles);
 				fprintf(out, "usemtl material%d\n", j);
 			}
 			for (int k = 0; k < triangles; ++k)
@@ -262,7 +249,7 @@ int main(int argc, char *argv[])
 		unsigned char *joints = texture;
 		for (int j = 0; j < joint_num; ++j)
 		{
-			fprintf(out, "# Joint id %d, size %.6f\n", j, joints[j] * JOINT_COLLISION_SCALE);
+			fprintf(out, "#  Joint %d, size %.6f\n", j, joints[j] * JOINT_COLLISION_SCALE);
 		}
 
 		// bones
@@ -275,12 +262,86 @@ int main(int argc, char *argv[])
 			unsigned short bjoints[2];
 			bjoints[0] = BE_SHORT(bones[1], bones[2]);
 			bjoints[1] = BE_SHORT(bones[3], bones[4]);
-			fprintf(out, "# Bone id %d, joints %d %d\n", bone_id, bjoints[0], bjoints[1]);
+			fprintf(out, "#  Bone %d, id %d, joints %d %d\n", j, bone_id, bjoints[0], bjoints[1]);
 			bones += 5;
 		}
 
 		fclose(out);
 		base_model = get_next_base_model(base_model);
+	}
+
+	// add bone frame data to obj models
+	if (!bff)
+	{
+		unsigned char *bone_frame = get_first_bone_frame(ddd);
+		for (int i = 0; i < bone_frame_num; ++i)
+		{
+			int base_model_id = get_base_model_id(bone_frame);
+			sprintf(filename, "model%d.OBJ", base_model_id);
+			FILE *out = fopen(filename, "a");
+
+			fprintf(out, "\n# Bone frame %d\n", i);
+			unsigned char action_id = get_action_name(bone_frame);
+			fprintf(out, "#  Action name: %s (%02x)\n", action_strings[action_id], action_id);
+			fprintf(out, "#  Action modifier flags: %02x\n", get_action_modifier_flags(bone_frame));
+			unsigned char *xymo = get_xy_movement_offset(bone_frame);
+			float xy_movement_offset[2];
+			xy_movement_offset[0] = (signed short)BE_SHORT(xymo[0], xymo[1]) / 256.0f;
+			xy_movement_offset[1] = (signed short)BE_SHORT(xymo[2], xymo[3]) / 256.0f;
+			fprintf(out, "#  XY movement offset: %.6f, %.6f\n", xy_movement_offset[0], xy_movement_offset[1]);
+
+			unsigned char *bones = get_bones(bone_frame);
+			int bone_num = get_bone_num(get_base_model_from_id(ddd, base_model_id));
+			for (int j = 0; j < bone_num; ++j)
+			{
+				float x = (signed short)BE_SHORT(bones[0], bones[1]);
+				float y = (signed short)BE_SHORT(bones[2], bones[3]);
+				float z = (signed short)BE_SHORT(bones[4], bones[5]);
+				float distance = sqrt(x*x + y*y + z*z);
+				x /= distance;
+				y /= distance;
+				z /= distance;
+				fprintf(out, "#  Bone %d forward normal: %.6f, %.6f, %.6f\n", j, x, y, z);
+				bones += 6;
+			}
+
+			unsigned char *joints = get_joints(ddd, bone_frame);
+			int joint_num = get_joint_num(get_base_model_from_id(ddd, base_model_id));
+			for (int j = 0; j < joint_num; ++j)
+			{
+				float x = (signed short)BE_SHORT(joints[0], joints[1]) * scale;
+				float y = (signed short)BE_SHORT(joints[2], joints[3]) * scale;
+				float z = (signed short)BE_SHORT(joints[4], joints[5]) * scale;
+				fprintf(out, "#  Joint %d: %.6f, %.6f, %.6f\n", j, x, y, z);
+				joints += 6;
+			}
+
+			unsigned char *shadow_texture_data = get_shadow_texture_data(ddd, bone_frame);
+			for (int j = 0; j < MAX_DDD_SHADOW_TEXTURE; ++j)
+			{
+				int alpha = get_shadow_texture_alpha(shadow_texture_data);
+				if (alpha)
+				{
+					fprintf(out, "#  Shadow texture %d\n", j);
+					fprintf(out, "#   Alpha: %d\n", alpha);
+					// vertices
+					for (int k = 0; k < 4; ++k)
+					{
+						float u = (signed short)BE_SHORT(shadow_texture_data[1], shadow_texture_data[2]) * scale;
+						float v = (signed short)BE_SHORT(shadow_texture_data[3], shadow_texture_data[4]) * scale;
+						fprintf(out, "#   Vertex %d: X %.6f, Y %.6f\n", k, u, v);
+					}
+					shadow_texture_data += 17;
+				}
+				else
+				{
+					++shadow_texture_data;
+				}
+			}
+
+			bone_frame = get_next_bone_frame(ddd, bone_frame);
+			fclose(out);
+		}
 	}
 
 	free(ddd);
@@ -462,6 +523,17 @@ unsigned char *get_triangles(unsigned char *texture)
 		return texture + 5;
 	else
 		return NULL;
+}
+
+unsigned char *get_first_bone_frame(unsigned char *ddd)
+{
+	int base_model_num = get_base_model_num(ddd);
+	unsigned char *ptr = get_first_base_model(ddd);
+	for (int i = 0; i < base_model_num; ++i)
+	{
+		ptr = get_next_base_model(ptr);
+	}
+	return ptr;
 }
 
 unsigned char *get_next_bone_frame(unsigned char *ddd, unsigned char *curr_bone_frame)
