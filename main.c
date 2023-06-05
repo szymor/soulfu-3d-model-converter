@@ -19,6 +19,16 @@
 #define RENDER_PAPER_FLAG			(128)
 
 #define BE_SHORT(b1, b2)	(((unsigned short)(b1) << 8) | (b2))
+#define XCHGE(us)			(BE_SHORT(us & 0xff, ((unsigned short)us) >> 8))
+
+enum ErrCode
+{
+	EC_NONE,
+	EC_NOARGS,
+	EC_NOFILE,
+	EC_WRERR,
+	EC_NOOP
+};
 
 const char *action_strings[] = {
 	"boning",
@@ -75,7 +85,7 @@ const char *action_strings[] = {
 unsigned char *ddd = NULL;
 size_t ddd_size = 0;
 
-int load_file(char *filename, unsigned char **buff, size_t *size);
+int load_file(const char *filename, unsigned char **buff, size_t *size);
 
 unsigned short get_scaling(unsigned char *ddd);
 unsigned short get_header_flags(unsigned char *ddd);
@@ -123,20 +133,45 @@ unsigned char *get_base_model_from_id(unsigned char *ddd, unsigned char id);
 
 char *get_texture_flag_string(unsigned char flags);
 
+int ddd_to_obj(const char *path);
+int obj_to_ddd(char *path);
+
 int main(int argc, char *argv[])
 {
 	printf("SoulFu 3D Model Converter\n\n");
 
 	if (argc < 2)
 	{
-		printf("No arguments given.\n");
-		return 1;
+		printf("No arguments given.\n\n");
+		printf("How to use?\n");
+		printf("  %s <filename>    convert DDD or OBJ file\n", argv[0]);
+		return EC_NOARGS;
 	}
 
-	if (load_file(argv[1], &ddd, &ddd_size) < 0)
+	const char *ext = NULL;
+
+	ext = strstr(argv[1], ".obj");
+	if (!ext) ext = strstr(argv[1], ".OBJ");
+	if (ext && ext[4] == 0)
+		return obj_to_ddd(argv[1]);
+
+	ext = strstr(argv[1], ".ddd");
+	if (!ext) ext = strstr(argv[1], ".DDD");
+	if (ext && ext[4] == 0)
+		return ddd_to_obj(argv[1]);
+
+	printf("No operation deduced from the arguments.\n");
+	return EC_NOOP;
+}
+
+int ddd_to_obj(const char *path)
+{
+	printf("DDD to OBJ.\n");
+
+	if (load_file(path, &ddd, &ddd_size) < 0)
 	{
-		printf("Cannot load the given file.\n");
-		return 2;
+		printf("Cannot load the file.\n");
+		return EC_NOFILE;
 	}
 
 	float scale = get_scaling(ddd) / DDD_SCALE_WEIGHT;
@@ -147,13 +182,18 @@ int main(int argc, char *argv[])
 	printf("Number of base models: %d\n", base_model_num);
 	int bone_frame_num = get_bone_frame_num(ddd);
 	printf("Number of bone frames: %d\n", bone_frame_num);
+
+	unsigned char *st = get_shadow_textures(ddd);
+	printf("Shadow texture indices: %d %d %d %d\n", st[0], st[1], st[2], st[3]);
+
 	char *bff = get_bone_frame_filename(ddd);
 	if (bff)
 		printf("Bone frame filename: %c%c%c%c%c%c%c%c\n", bff[0], bff[1], bff[2], bff[3], bff[4], bff[5], bff[6], bff[7]);
+
 	unsigned char *base_model = get_first_base_model(ddd);
 	for (int i = 0; i < base_model_num; ++i)
 	{
-		printf("Base model %d\n", i);
+		printf("Base model %d:\n", i);
 		printf("  Number of vertices: %d\n", get_vertex_num(base_model));
 		printf("  Number of texture vertices: %d\n", get_texture_vertex_num(base_model));
 		printf("  Number of joints: %d\n", get_joint_num(base_model));
@@ -168,8 +208,14 @@ int main(int argc, char *argv[])
 	{
 		sprintf(filename, "model%d.OBJ", i);
 		FILE *out = fopen(filename, "w");
+		if (!out)
+		{
+			printf("Cannot create %s file.\n", filename);
+			free(ddd);
+			return EC_WRERR;
+		}
 
-		fprintf(out, "# OBJ file generated from SoulFu DDD file %s\n", argv[1]);
+		fprintf(out, "# OBJ file generated from SoulFu DDD file %s\n", path);
 		fprintf(out, "#  Scaling: %.6f\n", scale);
 		fprintf(out, "#  Flags: %04x\n", header_flags);
 		if (bff)
@@ -267,6 +313,7 @@ int main(int argc, char *argv[])
 		}
 
 		fclose(out);
+		printf("Base model %d written to %s.\n", i, filename);
 		base_model = get_next_base_model(base_model);
 	}
 
@@ -279,6 +326,12 @@ int main(int argc, char *argv[])
 			int base_model_id = get_base_model_id(bone_frame);
 			sprintf(filename, "model%d.OBJ", base_model_id);
 			FILE *out = fopen(filename, "a");
+			if (!out)
+			{
+				printf("Cannot append to %s file.\n", filename);
+				free(ddd);
+				return EC_WRERR;
+			}
 
 			fprintf(out, "\n# Bone frame %d\n", i);
 			unsigned char action_id = get_action_name(bone_frame);
@@ -345,10 +398,107 @@ int main(int argc, char *argv[])
 	}
 
 	free(ddd);
-	return 0;
+	return EC_NONE;
 }
 
-int load_file(char *filename, unsigned char **buff, size_t *size)
+int obj_to_ddd(char *path)
+{
+	// temporary variables
+	unsigned short us = 0;
+	unsigned char uc = 0;
+
+	printf("OBJ to DDD.\n");
+
+	printf("Input file: %s\n", path);
+	FILE *in = fopen(path, "r");
+
+	// construct the output path
+	size_t len = strlen(path);
+	path[len - 3] = 'D';
+	path[len - 2] = 'D';
+	path[len - 1] = 'D';
+	const char *outpath = strrchr(path, '/');
+	if (outpath)
+		++outpath;
+	else
+		outpath = path;
+	printf("Output file: %s\n", outpath);
+	FILE *out = fopen(outpath, "wb");
+
+	// ===> write header
+	float scale = 0.001f;
+	us = (unsigned short)(scale * DDD_SCALE_WEIGHT);
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out);	// scale
+	us = 0xbfff;
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out);	// flags
+	uc = 0;
+	fwrite(&uc, 1, 1, out); // padding
+	uc = 1;
+	fwrite(&uc, 1, 1, out); // number of base models
+	us = 1;
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out); // number of bone frames
+
+	// shadow texture indices
+	uc = 0;
+	for (int i = 0; i < MAX_DDD_SHADOW_TEXTURE; ++i)
+		fwrite(&uc, 1, 1, out);
+
+	// no external bone frame file, no write
+
+	// ===> write a single base model
+	// TODO: finish it!
+
+	// ===> write a single bone frame
+	uc = 0;
+	fwrite(&uc, 1, 1, out); // action name (0 = boning)
+	uc = 0;
+	fwrite(&uc, 1, 1, out); // action modifier flags
+	uc = 0;
+	fwrite(&uc, 1, 1, out); // base model
+	us = 0;
+	fwrite(&us, 2, 1, out); // X movement offset
+	fwrite(&us, 2, 1, out); // Y movement offset
+
+	// 1 bone forward normal
+	us = 0;
+	fwrite(&us, 2, 1, out); // X
+	us = (unsigned short)(-1);
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out); // Y
+	us = 0;
+	fwrite(&us, 2, 1, out); // Z
+
+	// 2 joints
+	us = 0;
+	fwrite(&us, 2, 1, out); // X
+	us = 0;
+	fwrite(&us, 2, 1, out); // Y
+	us = (signed short)(1.0f / scale);
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out); // Z
+
+	us = 0;
+	fwrite(&us, 2, 1, out); // X
+	us = 0;
+	fwrite(&us, 2, 1, out); // Y
+	us = (signed short)(2.0f / scale);
+	us = XCHGE(us);
+	fwrite(&us, 2, 1, out); // Z
+
+	// shadow texture data (alpha only)
+	uc = 0;
+	for (int i = 0; i < MAX_DDD_SHADOW_TEXTURE; ++i)
+		fwrite(&uc, 1, 1, out);
+
+	fclose(out);
+	fclose(in);
+	return EC_NONE;
+}
+
+int load_file(const char *filename, unsigned char **buff, size_t *size)
 {
 	FILE *input = fopen(filename, "rb");
 	if (NULL == input)

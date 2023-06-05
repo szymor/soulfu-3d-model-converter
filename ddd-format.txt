@@ -7,6 +7,7 @@ Segmented models must use bone structure of base model...
 
 All integers are big endian.
 
+Shadow texture indices are indices of entries in SHADOW.TXT.
 Each vertex XYZ during decoding is multiplied by a scale. The scale equals _Scaling_ / 20000.0f.
 Each texture vertex UV during decoding is divided by 256.0f. V is negated (vertical flip).
 Joint sizes in a base model during decoding are multiplied by 0.015f.
