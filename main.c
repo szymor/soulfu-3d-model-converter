@@ -19,7 +19,6 @@
 #define RENDER_PAPER_FLAG			(128)
 
 #define BE_SHORT(b1, b2)	(((unsigned short)(b1) << 8) | (b2))
-#define XCHGE(us)			(BE_SHORT(us & 0xff, ((unsigned short)us) >> 8))
 
 enum ErrCode
 {
@@ -135,6 +134,9 @@ char *get_texture_flag_string(unsigned char flags);
 
 int ddd_to_obj(const char *path);
 int obj_to_ddd(char *path);
+
+void fwrite_byte(FILE *file, unsigned char byte);
+void fwrite_short(FILE *file, unsigned short word);
 
 int main(int argc, char *argv[])
 {
@@ -403,10 +405,6 @@ int ddd_to_obj(const char *path)
 
 int obj_to_ddd(char *path)
 {
-	// temporary variables
-	unsigned short us = 0;
-	unsigned char uc = 0;
-
 	printf("OBJ to DDD.\n");
 
 	printf("Input file: %s\n", path);
@@ -427,71 +425,164 @@ int obj_to_ddd(char *path)
 
 	// ===> write header
 	float scale = 0.001f;
-	us = (unsigned short)(scale * DDD_SCALE_WEIGHT);
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out);	// scale
-	us = 0xbfff;
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out);	// flags
-	uc = 0;
-	fwrite(&uc, 1, 1, out); // padding
-	uc = 1;
-	fwrite(&uc, 1, 1, out); // number of base models
-	us = 1;
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out); // number of bone frames
+	fwrite_short(out, (unsigned short)(scale * DDD_SCALE_WEIGHT));	// scale
+	fwrite_short(out, 0xbfff);	// flags
+	fwrite_byte(out, 0);	// padding
+	fwrite_byte(out, 1);	// number of base models
+	fwrite_short(out, 1);	// number of bone frames
 
 	// shadow texture indices
-	uc = 0;
 	for (int i = 0; i < MAX_DDD_SHADOW_TEXTURE; ++i)
-		fwrite(&uc, 1, 1, out);
+		fwrite_byte(out, 0);
 
 	// no external bone frame file, no write
 
 	// ===> write a single base model
-	// TODO: finish it!
+	long int vtv_offset = ftell(out);
+	fwrite_short(out, 0);	// number of vertices - placeholder
+	fwrite_short(out, 0);	// number of texture vertices - placeholder
+	fwrite_short(out, 2);	// number of joints
+	fwrite_short(out, 1);	// number of bones
+
+	// loop over vertices
+	int vertex_num = 0;
+	fseek(in, 0, SEEK_SET);
+	while (!feof(in))
+	{
+		float x, y, z;
+		if (fscanf(in, "v %f %f %f", &x, &y, &z) == 3)
+		{
+			// coordinates
+			fwrite_short(out, (signed short)(x / scale));
+			fwrite_short(out, (signed short)(y / scale));
+			fwrite_short(out, (signed short)(z / scale));
+			// bone binding
+			fwrite_byte(out, 0);
+			fwrite_byte(out, 0);
+			// bone weighting
+			fwrite_byte(out, (unsigned char)(0.5f * 255.0f) >> 1);
+
+			++vertex_num;
+		}
+
+		// start at a new line
+		int ch = 0;
+		while ('\n' != ch && EOF != ch)
+		{
+			ch = fgetc(in);
+		}
+	}
+
+	// loop over texture vertices
+	int texture_vertex_num = 0;
+	fseek(in, 0, SEEK_SET);
+	while (!feof(in))
+	{
+		float x, y;
+		if (fscanf(in, "vt %f %f", &x, &y) == 2)
+		{
+			// coordinates
+			fwrite_short(out, (signed short)(x * 256.0f));
+			fwrite_short(out, (signed short)(y * 256.0f));
+
+			++texture_vertex_num;
+		}
+
+		// start at a new line
+		int ch = 0;
+		while ('\n' != ch && EOF != ch)
+		{
+			ch = fgetc(in);
+		}
+	}
+
+	// textures
+	/*for (int i = 0; i < MAX_DDD_TEXTURE; ++i)
+	{
+		fwrite_byte(out, 1);	// rendering mode on
+		fwrite_byte(out, 0);	// flags
+		fwrite_byte(out, 255);	// alpha
+		fwrite_short(out, 0);	// number of faces - placeholder
+		// loop over faces
+	}*/
+	fwrite_byte(out, 1);
+	fwrite_byte(out, 0);	// flags
+	fwrite_byte(out, 255);	// alpha
+	long int face_num_offset = ftell(out);
+	fwrite_short(out, 0);	// number of faces - placeholder
+	// loop over faces
+	int face_num = 0;
+	fseek(in, 0, SEEK_SET);
+	while (!feof(in))
+	{
+		int ix, itx, iy, ity, iz, itz;
+		if (fscanf(in, "f %d/%d %d/%d %d/%d", &ix, &itx, &iy, &ity, &iz, &itz) == 6)
+		{
+			// three vertex - texture vertex pairs
+			fwrite_short(out, ix - 1);
+			fwrite_short(out, itx - 1);
+			fwrite_short(out, iy - 1);
+			fwrite_short(out, ity - 1);
+			fwrite_short(out, iz - 1);
+			fwrite_short(out, itz - 1);
+
+			++face_num;
+		}
+
+		// start at a new line
+		int ch = 0;
+		while ('\n' != ch && EOF != ch)
+		{
+			ch = fgetc(in);
+		}
+	}
+
+	// 3x rendering mode off
+	fwrite_byte(out, 0);
+	fwrite_byte(out, 0);
+	fwrite_byte(out, 0);
+	// TODO: make model use multiple textures
+
+	// joints
+	fwrite_byte(out, 0.0f / JOINT_COLLISION_SCALE);
+	fwrite_byte(out, 0.0f / JOINT_COLLISION_SCALE);
+
+	// bones
+	fwrite_byte(out, 0);	// bone id
+	fwrite_short(out, 1);
+	fwrite_short(out, 0);
 
 	// ===> write a single bone frame
-	uc = 0;
-	fwrite(&uc, 1, 1, out); // action name (0 = boning)
-	uc = 0;
-	fwrite(&uc, 1, 1, out); // action modifier flags
-	uc = 0;
-	fwrite(&uc, 1, 1, out); // base model
-	us = 0;
-	fwrite(&us, 2, 1, out); // X movement offset
-	fwrite(&us, 2, 1, out); // Y movement offset
+	fwrite_byte(out, 0);	// action name (0 = boning)
+	fwrite_byte(out, 0);	// action modifier flags
+	fwrite_byte(out, 0);	// base model id
+	fwrite_short(out, 0);	// X movement offset
+	fwrite_short(out, 0);	// Y movement offset
 
 	// 1 bone forward normal
-	us = 0;
-	fwrite(&us, 2, 1, out); // X
-	us = (unsigned short)(-1);
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out); // Y
-	us = 0;
-	fwrite(&us, 2, 1, out); // Z
+	fwrite_short(out, 0);	// X
+	fwrite_short(out, -1);	// Y
+	fwrite_short(out, 0);	// Z
 
 	// 2 joints
-	us = 0;
-	fwrite(&us, 2, 1, out); // X
-	us = 0;
-	fwrite(&us, 2, 1, out); // Y
-	us = (signed short)(1.0f / scale);
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out); // Z
+	fwrite_short(out, 0);	// X
+	fwrite_short(out, 0);	// Y
+	fwrite_short(out, (signed short)(1.0f / scale));	// Z
 
-	us = 0;
-	fwrite(&us, 2, 1, out); // X
-	us = 0;
-	fwrite(&us, 2, 1, out); // Y
-	us = (signed short)(2.0f / scale);
-	us = XCHGE(us);
-	fwrite(&us, 2, 1, out); // Z
+	fwrite_short(out, 0);	// X
+	fwrite_short(out, 0);	// Y
+	fwrite_short(out, (signed short)(2.0f / scale));	// Z
 
 	// shadow texture data (alpha only)
-	uc = 0;
 	for (int i = 0; i < MAX_DDD_SHADOW_TEXTURE; ++i)
-		fwrite(&uc, 1, 1, out);
+		fwrite_byte(out, 0);
+
+	// fill out placeholders
+	fseek(out, face_num_offset, SEEK_SET);
+	fwrite_short(out, face_num);
+	fseek(out, vtv_offset, SEEK_SET);
+	fwrite_short(out, vertex_num);
+	fwrite_short(out, texture_vertex_num);
 
 	fclose(out);
 	fclose(in);
@@ -771,5 +862,20 @@ char *get_texture_flag_string(unsigned char flags)
 	// remove trailing space
 	if (buff[0] != 0)
 		buff[strlen(buff) - 1] = 0;
+	else
+		strcat(buff, "none");
 	return buff;
+}
+
+void fwrite_byte(FILE *file, unsigned char byte)
+{
+	fwrite(&byte, 1, 1, file);
+}
+
+void fwrite_short(FILE *file, unsigned short word)
+{
+	unsigned char bytes[2];
+	bytes[0] = word >> 8;
+	bytes[1] = word & 0xff;
+	fwrite(bytes, 2, 1, file);
 }
