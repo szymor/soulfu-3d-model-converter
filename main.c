@@ -483,7 +483,7 @@ int obj_to_ddd(char *path)
 		{
 			// coordinates
 			fwrite_short(out, (signed short)(x * 256.0f));
-			fwrite_short(out, (signed short)(y * 256.0f));
+			fwrite_short(out, (signed short)(-y * 256.0f));
 
 			++texture_vertex_num;
 		}
@@ -497,36 +497,49 @@ int obj_to_ddd(char *path)
 	}
 
 	// textures
-	/*for (int i = 0; i < MAX_DDD_TEXTURE; ++i)
-	{
-		fwrite_byte(out, 1);	// rendering mode on
-		fwrite_byte(out, 0);	// flags
-		fwrite_byte(out, 255);	// alpha
-		fwrite_short(out, 0);	// number of faces - placeholder
-		// loop over faces
-	}*/
-	fwrite_byte(out, 1);
-	fwrite_byte(out, 0);	// flags
-	fwrite_byte(out, 255);	// alpha
-	long int face_num_offset = ftell(out);
-	fwrite_short(out, 0);	// number of faces - placeholder
-	// loop over faces
-	int face_num = 0;
+	long int face_num_offset[MAX_DDD_TEXTURE] = { 0, 0, 0, 0 };
+	int face_num[MAX_DDD_TEXTURE] = { 0, 0, 0, 0 };
+	int current_texture_idx = 0;
+	char texture_started = 0;
 	fseek(in, 0, SEEK_SET);
+	// loop over faces
 	while (!feof(in))
 	{
 		int ix, itx, iy, ity, iz, itz;
-		if (fscanf(in, "f %d/%d %d/%d %d/%d", &ix, &itx, &iy, &ity, &iz, &itz) == 6)
+		char cname[16];
+		fscanf(in, "%s", cname);
+		if (!strcmp(cname, "f"))
 		{
-			// three vertex - texture vertex pairs
-			fwrite_short(out, ix - 1);
-			fwrite_short(out, itx - 1);
-			fwrite_short(out, iy - 1);
-			fwrite_short(out, ity - 1);
-			fwrite_short(out, iz - 1);
-			fwrite_short(out, itz - 1);
+			if (fscanf(in, "%d/%d %d/%d %d/%d", &ix, &itx, &iy, &ity, &iz, &itz) == 6)
+			{
+				if (!texture_started)
+				{
+					fwrite_byte(out, 1);	// rendering mode on
+					fwrite_byte(out, 0);	// flags
+					fwrite_byte(out, 255);	// alpha
+					face_num_offset[current_texture_idx] = ftell(out);
+					fwrite_short(out, 0);	// number of faces - placeholder
+					texture_started = 1;
+				}
 
-			++face_num;
+				// three vertex - texture vertex pairs
+				fwrite_short(out, ix - 1);
+				fwrite_short(out, itx - 1);
+				fwrite_short(out, iy - 1);
+				fwrite_short(out, ity - 1);
+				fwrite_short(out, iz - 1);
+				fwrite_short(out, itz - 1);
+
+				++face_num[current_texture_idx];
+			}
+		}
+		else if (!strcmp(cname, "usemtl"))
+		{
+			if (texture_started && current_texture_idx < (MAX_DDD_TEXTURE - 1))
+			{
+				++current_texture_idx;
+				texture_started = 0;
+			}
 		}
 
 		// start at a new line
@@ -537,11 +550,11 @@ int obj_to_ddd(char *path)
 		}
 	}
 
-	// 3x rendering mode off
-	fwrite_byte(out, 0);
-	fwrite_byte(out, 0);
-	fwrite_byte(out, 0);
-	// TODO: make model use multiple textures
+	// rendering mode off for unused textures
+	for (int i = current_texture_idx + texture_started; i < MAX_DDD_TEXTURE; ++i)
+	{
+		fwrite_byte(out, 0);
+	}
 
 	// joints
 	fwrite_byte(out, 0.0f / JOINT_COLLISION_SCALE);
@@ -578,8 +591,14 @@ int obj_to_ddd(char *path)
 		fwrite_byte(out, 0);
 
 	// fill out placeholders
-	fseek(out, face_num_offset, SEEK_SET);
-	fwrite_short(out, face_num);
+	for (int i = 0; i < MAX_DDD_TEXTURE; ++i)
+	{
+		if (face_num_offset[i] != 0)
+		{
+			fseek(out, face_num_offset[i], SEEK_SET);
+			fwrite_short(out, face_num[i]);
+		}
+	}
 	fseek(out, vtv_offset, SEEK_SET);
 	fwrite_short(out, vertex_num);
 	fwrite_short(out, texture_vertex_num);
