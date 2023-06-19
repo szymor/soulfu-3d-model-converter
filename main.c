@@ -521,6 +521,7 @@ int obj_to_ddd(char *path)
 		if (!strcmp(cname, "f"))
 		{
 			fscanf(in, "%[^\n]", cname);
+			cname[strlen(cname) + 1] = '\0'; // double null ends the string
 
 			char *endptr = NULL;
 			endptr = read_triplet(cname, &ix, &itx, NULL);
@@ -940,20 +941,30 @@ void fwrite_short(FILE *file, unsigned short word)
 
 char *read_triplet(char *string, int *a, int *b, int *c)
 {
-	char *pa, *pb, *pc;
+	char *pa, *pb, *pc, temp;
 
 	// omit whitespaces
 	while (*string == ' ' || *string == '\t') ++string;
 
 	pa = string;
 
-	pb = string;
-	while (*pb != '/' && *pb != '\0') ++pb;
-	if (*pb == '/') ++pb;
+	// ========= move ptr to the next valid triplet
+	// remember, double null ends the whole face line
+	while ((*string >= '0' && *string <= '9') || *string == '/') ++string;
+	++string;
+	// =========
+
+	pb = pa;
+	while (*pb >= '0' && *pb <= '9') ++pb;
+	temp = *pb;
+	*pb = '\0';
+	if (temp == '/') ++pb;
 
 	pc = pb;
-	while (*pc != '/' && *pc != '\0') ++pc;
-	if (*pc == '/') ++pc;
+	while (*pc >= '0' && *pc <= '9') ++pc;
+	temp = *pc;
+	*pc = '\0';
+	if (temp == '/') ++pc;
 
 	if (a) *a = 0;
 	if (b) *b = 0;
@@ -963,8 +974,5 @@ char *read_triplet(char *string, int *a, int *b, int *c)
 	if (b) sscanf(pb, "%d", b);
 	if (c) sscanf(pc, "%d", c);
 
-	// move ptr to the next valid position
-	string = pc;
-	while (*string != ' ' && *string != '\t' && *string != '\0') ++string;
 	return string;
 }
