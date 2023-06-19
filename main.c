@@ -138,6 +138,8 @@ int obj_to_ddd(char *path);
 void fwrite_byte(FILE *file, unsigned char byte);
 void fwrite_short(FILE *file, unsigned short word);
 
+char *read_triplet(char *string, int *a, int *b, int *c);
+
 int main(int argc, char *argv[])
 {
 	printf("SoulFu 3D Model Converter\n\n");
@@ -495,6 +497,14 @@ int obj_to_ddd(char *path)
 			ch = fgetc(in);
 		}
 	}
+	// write a dummy texture vertex if none exist
+	if (0 == texture_vertex_num)
+	{
+		// coordinates
+		fwrite_short(out, (signed short)(0 * 256.0f));
+		fwrite_short(out, (signed short)(-0 * 256.0f));
+		++texture_vertex_num;
+	}
 
 	// textures
 	long int face_num_offset[MAX_DDD_TEXTURE] = { 0, 0, 0, 0 };
@@ -506,31 +516,60 @@ int obj_to_ddd(char *path)
 	while (!feof(in))
 	{
 		int ix, itx, iy, ity, iz, itz;
-		char cname[16];
+		char cname[160];
 		fscanf(in, "%s", cname);
 		if (!strcmp(cname, "f"))
 		{
-			if (fscanf(in, "%d/%d %d/%d %d/%d", &ix, &itx, &iy, &ity, &iz, &itz) == 6)
+			fscanf(in, "%[^\n]", cname);
+
+			char *endptr = NULL;
+			endptr = read_triplet(cname, &ix, &itx, NULL);
+			if (0 == itx) itx = 1;
+			endptr = read_triplet(endptr, &iy, &ity, NULL);
+			if (0 == ity) ity = 1;
+			endptr = read_triplet(endptr, &iz, &itz, NULL);
+			if (0 == itz) itz = 1;
+
+			if (!texture_started)
 			{
-				if (!texture_started)
+				fwrite_byte(out, 1);	// rendering mode on
+				fwrite_byte(out, 0);	// flags
+				fwrite_byte(out, 255);	// alpha
+				face_num_offset[current_texture_idx] = ftell(out);
+				fwrite_short(out, 0);	// number of faces - placeholder
+				texture_started = 1;
+			}
+
+			// three vertex - texture vertex pairs
+			fwrite_short(out, ix - 1);
+			fwrite_short(out, itx - 1);
+			fwrite_short(out, iy - 1);
+			fwrite_short(out, ity - 1);
+			fwrite_short(out, iz - 1);
+			fwrite_short(out, itz - 1);
+
+			++face_num[current_texture_idx];
+
+			// check for n-gons where n > 3
+			// convex only
+			while (iz > 0)
+			{
+				iy = iz;
+				ity = itz;
+				endptr = read_triplet(endptr, &iz, &itz, NULL);
+				if (0 == itz) itz = 1;
+				if (iz > 0)
 				{
-					fwrite_byte(out, 1);	// rendering mode on
-					fwrite_byte(out, 0);	// flags
-					fwrite_byte(out, 255);	// alpha
-					face_num_offset[current_texture_idx] = ftell(out);
-					fwrite_short(out, 0);	// number of faces - placeholder
-					texture_started = 1;
+					// three vertex - texture vertex pairs
+					fwrite_short(out, ix - 1);
+					fwrite_short(out, itx - 1);
+					fwrite_short(out, iy - 1);
+					fwrite_short(out, ity - 1);
+					fwrite_short(out, iz - 1);
+					fwrite_short(out, itz - 1);
+
+					++face_num[current_texture_idx];
 				}
-
-				// three vertex - texture vertex pairs
-				fwrite_short(out, ix - 1);
-				fwrite_short(out, itx - 1);
-				fwrite_short(out, iy - 1);
-				fwrite_short(out, ity - 1);
-				fwrite_short(out, iz - 1);
-				fwrite_short(out, itz - 1);
-
-				++face_num[current_texture_idx];
 			}
 		}
 		else if (!strcmp(cname, "usemtl"))
@@ -897,4 +936,35 @@ void fwrite_short(FILE *file, unsigned short word)
 	bytes[0] = word >> 8;
 	bytes[1] = word & 0xff;
 	fwrite(bytes, 2, 1, file);
+}
+
+char *read_triplet(char *string, int *a, int *b, int *c)
+{
+	char *pa, *pb, *pc;
+
+	// omit whitespaces
+	while (*string == ' ' || *string == '\t') ++string;
+
+	pa = string;
+
+	pb = string;
+	while (*pb != '/' && *pb != '\0') ++pb;
+	if (*pb == '/') ++pb;
+
+	pc = pb;
+	while (*pc != '/' && *pc != '\0') ++pc;
+	if (*pc == '/') ++pc;
+
+	if (a) *a = 0;
+	if (b) *b = 0;
+	if (c) *c = 0;
+
+	if (a) sscanf(pa, "%d", a);
+	if (b) sscanf(pb, "%d", b);
+	if (c) sscanf(pc, "%d", c);
+
+	// move ptr to the next valid position
+	string = pc;
+	while (*string != ' ' && *string != '\t' && *string != '\0') ++string;
+	return string;
 }
